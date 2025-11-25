@@ -13,6 +13,7 @@ class Joystick
 public:
     Joystick(uint8_t pinA, uint8_t pinB, uint8_t pinC);
 
+    // reads the position and returns it. Also saves it internally
     Vec2u16 readPosition(void);
     bool isJoystickDown();
 

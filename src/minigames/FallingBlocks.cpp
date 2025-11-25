@@ -8,14 +8,14 @@ void FallingBlocks::init()
 {
 }
 
-void FallingBlocks::update(uint32_t deltaTime, Keyboard & keyboard, Joystick & Joystick)
+void FallingBlocks::update(uint32_t deltaTime, Keyboard & keyboard, Joystick & joystick)
 {
     if (gameOver)
     {
         return;
     }
 
-    handlePlayerInput(keyboard);
+    handlePlayerInput(keyboard, joystick);
 
     const auto currentTime = millis();
 
@@ -109,7 +109,7 @@ void FallingBlocks::checkCollision()
 }
 
 
-void FallingBlocks::handlePlayerInput(Keyboard& keyboard)
+void FallingBlocks::handlePlayerInput(Keyboard& keyboard, Joystick& joystick)
 {
     while (keyboard.hasEvent()) 
     {
@@ -127,7 +127,29 @@ void FallingBlocks::handlePlayerInput(Keyboard& keyboard)
         }
     }
 
+    // mieluiten joystick.readPositions();
+    // sitten getPostion();
+    Vec2u16 position = joystick.readPosition();
+    Joystick::Direction dir =  joystick.convertPositionToDirection();
     
+    switch (dir)
+    {
+    case Joystick::Direction::LEFT:
+        if (playerX > 0)
+        {
+            playerX--;
+        } 
+        break;
+    case Joystick::Direction::RIGHT:
+        if (playerX < COLS - 1)
+        {
+            playerX--;
+        } 
+        break;
+
+    default:
+        break;
+    }
     // lisää joystick support tähän 
 }
 

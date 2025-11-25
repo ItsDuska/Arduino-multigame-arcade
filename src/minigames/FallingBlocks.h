@@ -30,7 +30,7 @@ private:
     void spawnObstacle(); 
     void moveObstacles();
     void checkCollision();
-    void handlePlayerInput(Keyboard& keyboard);
+    void handlePlayerInput(Keyboard& keyboard, Joystick& joystick);
 
 
 private:
