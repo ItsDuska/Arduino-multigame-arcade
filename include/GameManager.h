@@ -1,16 +1,15 @@
 #ifndef GAME_MANAGER_H
 #define GAME_MANAGER_H
 
-#include "../mock/ArduinoWrapper.h"
 #include "minigames/GameInterface.h"
 #include "minigames/GameRegistry.h"
 
-#include "Keyboard/Keyboard.h"
-#include "Joystick/Joystick.h"
+#include <Joystick.h>
+#include <Keyboard.h>
 
-
-// BEHOLD! Kauhee määrä includeja, joista en oo vielä jaksanu katsoa että mikkä on turhia ja mikkä eivät. jotenka...
-// TODO: FIX ME 
+// BEHOLD! Kauhee määrä includeja, joista en oo vielä jaksanu katsoa että mikkä
+// on turhia ja mikkä eivät. jotenka...
+// TODO: FIX ME
 #include <Arduino_DataBus.h>
 #include <Arduino_G.h>
 #include <Arduino_GFX.h>
@@ -21,9 +20,7 @@
 #include <YCbCr2RGB.h>
 #include <gfxfont.h>
 
-
-enum class GameState : char
-{
+enum class GameState : char {
   STATE_MENU,
   STATE_GAME_INIT,
   STATE_GAME_RUNNING,
@@ -31,13 +28,11 @@ enum class GameState : char
   STATE_ALL_COMPLETE
 };
 
-class GameManager
-{
+class GameManager {
 
 public:
   GameManager();
   ~GameManager();
-
 
   void init();
 
@@ -52,15 +47,14 @@ private:
   GameState currentState;
   uint8_t currentGameIndex;
   uint8_t totalGames;
-  Game* activeGame;
+  Game *activeGame;
   uint32_t lastUpdateTime;
 
   Arduino_DataBus *bus;
   Arduino_GFX *gfx;
-  
+
   Keyboard keyboard;
   Joystick Joystick;
-
 };
 
 #endif

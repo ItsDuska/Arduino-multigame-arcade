@@ -1,5 +1,5 @@
-#include "Joystick/Joystick.h"
 #include <Arduino.h>
+#include <Joystick.h>
 
 Joystick joystick(A0, A1, A2);
 

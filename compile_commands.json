@@ -1,0 +1,872 @@
+[
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/CDC.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/CDC.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/CDC.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/CDC.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/HardwareSerial.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/HardwareSerial.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/HardwareSerial0.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial0.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial0.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/HardwareSerial0.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/HardwareSerial1.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial1.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial1.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/HardwareSerial1.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/HardwareSerial2.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial2.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial2.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/HardwareSerial2.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/HardwareSerial3.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial3.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial3.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/HardwareSerial3.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/IPAddress.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/IPAddress.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/IPAddress.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/IPAddress.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/PluggableUSB.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/PluggableUSB.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/PluggableUSB.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/PluggableUSB.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/Print.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/Print.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/Print.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/Print.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/Stream.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/Stream.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/Stream.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/Stream.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/Tone.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/Tone.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/Tone.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/Tone.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/USBCore.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/USBCore.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/USBCore.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/USBCore.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/megaatmega2560/FrameworkArduino/WInterrupts.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/WInterrupts.c",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/WInterrupts.c",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/WInterrupts.c.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/WMath.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/WMath.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/WMath.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/WMath.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/WString.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/WString.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/WString.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/WString.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/abi.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/abi.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/abi.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/abi.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/megaatmega2560/FrameworkArduino/hooks.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/hooks.c",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/hooks.c",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/hooks.c.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/main.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/main.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/main.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/main.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/FrameworkArduino/new.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/new.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/new.cpp",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/new.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/megaatmega2560/FrameworkArduino/wiring.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring.c",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring.c",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/wiring.c.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/megaatmega2560/FrameworkArduino/wiring_analog.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_analog.c",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_analog.c",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/wiring_analog.c.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/megaatmega2560/FrameworkArduino/wiring_digital.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_digital.c",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_digital.c",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/wiring_digital.c.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -mmcu=atmega2560 -x assembler-with-cpp -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega -c -o .pio/build/megaatmega2560/FrameworkArduino/wiring_pulse.S.o /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_pulse.S",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_pulse.S",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/wiring_pulse.S.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/megaatmega2560/FrameworkArduino/wiring_pulse.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_pulse.c",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_pulse.c",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/wiring_pulse.c.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/megaatmega2560/FrameworkArduino/wiring_shift.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_shift.c",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_shift.c",
+        "output": ".pio/build/megaatmega2560/FrameworkArduino/wiring_shift.c.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib136/Wire/Wire.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src/Wire.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src/Wire.cpp",
+        "output": ".pio/build/megaatmega2560/lib136/Wire/Wire.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/megaatmega2560/lib136/Wire/utility/twi.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src/utility/twi.c",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src/utility/twi.c",
+        "output": ".pio/build/megaatmega2560/lib136/Wire/utility/twi.c.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib90c/SPI/SPI.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega /home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src/SPI.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src/SPI.cpp",
+        "output": ".pio/build/megaatmega2560/lib90c/SPI/SPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib132/Adafruit BusIO/Adafruit_BusIO_Register.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_BusIO_Register.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_BusIO_Register.cpp",
+        "output": ".pio/build/megaatmega2560/lib132/Adafruit BusIO/Adafruit_BusIO_Register.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib132/Adafruit BusIO/Adafruit_GenericDevice.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_GenericDevice.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_GenericDevice.cpp",
+        "output": ".pio/build/megaatmega2560/lib132/Adafruit BusIO/Adafruit_GenericDevice.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib132/Adafruit BusIO/Adafruit_I2CDevice.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_I2CDevice.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_I2CDevice.cpp",
+        "output": ".pio/build/megaatmega2560/lib132/Adafruit BusIO/Adafruit_I2CDevice.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib132/Adafruit BusIO/Adafruit_SPIDevice.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_SPIDevice.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_SPIDevice.cpp",
+        "output": ".pio/build/megaatmega2560/lib132/Adafruit BusIO/Adafruit_SPIDevice.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib94d/Adafruit GFX Library/Adafruit_GFX.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit GFX Library/Adafruit_GFX.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit GFX Library/Adafruit_GFX.cpp",
+        "output": ".pio/build/megaatmega2560/lib94d/Adafruit GFX Library/Adafruit_GFX.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib94d/Adafruit GFX Library/Adafruit_GrayOLED.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit GFX Library/Adafruit_GrayOLED.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit GFX Library/Adafruit_GrayOLED.cpp",
+        "output": ".pio/build/megaatmega2560/lib94d/Adafruit GFX Library/Adafruit_GrayOLED.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib94d/Adafruit GFX Library/Adafruit_SPITFT.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit GFX Library/Adafruit_SPITFT.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit GFX Library/Adafruit_SPITFT.cpp",
+        "output": ".pio/build/megaatmega2560/lib94d/Adafruit GFX Library/Adafruit_SPITFT.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o \".pio/build/megaatmega2560/lib94d/Adafruit GFX Library/glcdfont.c.o\" -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit GFX Library/glcdfont.c\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit GFX Library/glcdfont.c",
+        "output": ".pio/build/megaatmega2560/lib94d/Adafruit GFX Library/glcdfont.c.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib074/Adafruit Keypad/Adafruit_Keypad.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit Keypad\" -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit Keypad/Adafruit_Keypad.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit Keypad/Adafruit_Keypad.cpp",
+        "output": ".pio/build/megaatmega2560/lib074/Adafruit Keypad/Adafruit_Keypad.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_DataBus.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_DataBus.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_DataBus.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_DataBus.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_G.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_G.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_G.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_G.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_GFX.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_GFX.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_GFX.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_GFX.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_GFX_Library.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_GFX_Library.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_GFX_Library.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_GFX_Library.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_OLED.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_OLED.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_OLED.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_OLED.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_TFT.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_TFT.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_TFT.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_TFT.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_TFT_18bit.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_TFT_18bit.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/Arduino_TFT_18bit.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/Arduino_TFT_18bit.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/canvas/Arduino_Canvas.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/canvas/Arduino_Canvas.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/canvas/Arduino_Canvas.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/canvas/Arduino_Canvas.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/canvas/Arduino_Canvas_3bit.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/canvas/Arduino_Canvas_3bit.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/canvas/Arduino_Canvas_3bit.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/canvas/Arduino_Canvas_3bit.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/canvas/Arduino_Canvas_Indexed.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/canvas/Arduino_Canvas_Indexed.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/canvas/Arduino_Canvas_Indexed.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/canvas/Arduino_Canvas_Indexed.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/canvas/Arduino_Canvas_Mono.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/canvas/Arduino_Canvas_Mono.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/canvas/Arduino_Canvas_Mono.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/canvas/Arduino_Canvas_Mono.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_AVRPAR16.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_AVRPAR16.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_AVRPAR16.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_AVRPAR16.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_AVRPAR8.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_AVRPAR8.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_AVRPAR8.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_AVRPAR8.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_DUEPAR16.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_DUEPAR16.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_DUEPAR16.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_DUEPAR16.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32DSIPanel.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32DSIPanel.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32DSIPanel.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32DSIPanel.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32LCD16.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32LCD16.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32LCD16.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32LCD16.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32LCD8.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32LCD8.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32LCD8.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32LCD8.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR16.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR16.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR16.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR16.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR16Q.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR16Q.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR16Q.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR16Q.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR16QQ.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR16QQ.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR16QQ.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR16QQ.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR8.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR8.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR8.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR8.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR8Q.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR8Q.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR8Q.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR8Q.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR8QQ.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR8QQ.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR8QQ.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR8QQ.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR8QQQ.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR8QQQ.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32PAR8QQQ.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32PAR8QQQ.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32QSPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32QSPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32QSPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32QSPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32RGBPanel.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32RGBPanel.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32RGBPanel.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32RGBPanel.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32S2PAR16.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32S2PAR16.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32S2PAR16.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32S2PAR16.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32S2PAR16Q.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32S2PAR16Q.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32S2PAR16Q.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32S2PAR16Q.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32S2PAR8.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32S2PAR8.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32S2PAR8.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32S2PAR8.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32S2PAR8Q.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32S2PAR8Q.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32S2PAR8Q.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32S2PAR8Q.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32SPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32SPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32SPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32SPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32SPIDMA.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32SPIDMA.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP32SPIDMA.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP32SPIDMA.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP8266SPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP8266SPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_ESP8266SPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_ESP8266SPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_HWSPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_HWSPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_HWSPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_HWSPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_NRFXSPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_NRFXSPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_NRFXSPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_NRFXSPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_RPiPicoPAR16.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_RPiPicoPAR16.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_RPiPicoPAR16.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_RPiPicoPAR16.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_RPiPicoPAR8.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_RPiPicoPAR8.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_RPiPicoPAR8.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_RPiPicoPAR8.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_RPiPicoSPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_RPiPicoSPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_RPiPicoSPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_RPiPicoSPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_RTLPAR8.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_RTLPAR8.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_RTLPAR8.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_RTLPAR8.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_STM32PAR8.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_STM32PAR8.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_STM32PAR8.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_STM32PAR8.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_SWPAR16.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_SWPAR16.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_SWPAR16.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_SWPAR16.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_SWPAR8.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_SWPAR8.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_SWPAR8.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_SWPAR8.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_SWSPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_SWSPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_SWSPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_SWSPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_UNOPAR8.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_UNOPAR8.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_UNOPAR8.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_UNOPAR8.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_Wire.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_Wire.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_Wire.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_Wire.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_XCA9554SWSPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_XCA9554SWSPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_XCA9554SWSPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_XCA9554SWSPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_XL9535SWSPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_XL9535SWSPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_XL9535SWSPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_XL9535SWSPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_mbedSPI.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_mbedSPI.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/databus/Arduino_mbedSPI.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/databus/Arduino_mbedSPI.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_AXS15231B.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_AXS15231B.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_AXS15231B.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_AXS15231B.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_CO5300.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_CO5300.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_CO5300.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_CO5300.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_DSI_Display.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_DSI_Display.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_DSI_Display.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_DSI_Display.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9106.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9106.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9106.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9106.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9107.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9107.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9107.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9107.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9A01.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9A01.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9A01.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9A01.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9C01.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9C01.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9C01.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9C01.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9D01.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9D01.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_GC9D01.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_GC9D01.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8347C.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8347C.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8347C.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8347C.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8347D.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8347D.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8347D.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8347D.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8352C.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8352C.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8352C.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8352C.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8357A.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8357A.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8357A.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8357A.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8357B.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8357B.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8357B.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8357B.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8369A.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8369A.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_HX8369A.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_HX8369A.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9225.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9225.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9225.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9225.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9331.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9331.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9331.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9331.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9341.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9341.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9341.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9341.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9342.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9342.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9342.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9342.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9481_18bit.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9481_18bit.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9481_18bit.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9481_18bit.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9486.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9486.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9486.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9486.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9486_18bit.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9486_18bit.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9486_18bit.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9486_18bit.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9488.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9488.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9488.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9488.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9488_18bit.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9488_18bit.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9488_18bit.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9488_18bit.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9488_3bit.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9488_3bit.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9488_3bit.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9488_3bit.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9806.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9806.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ILI9806.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ILI9806.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_JBT6K71.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_JBT6K71.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_JBT6K71.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_JBT6K71.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_JD9613.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_JD9613.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_JD9613.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_JD9613.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NT35310.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NT35310.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NT35310.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NT35310.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NT35510.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NT35510.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NT35510.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NT35510.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NT39125.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NT39125.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NT39125.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NT39125.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NV3007.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NV3007.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NV3007.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NV3007.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NV3023.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NV3023.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NV3023.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NV3023.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NV3041A.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NV3041A.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_NV3041A.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_NV3041A.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_OTM8009A.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_OTM8009A.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_OTM8009A.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_OTM8009A.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_R61529.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_R61529.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_R61529.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_R61529.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_RGB_Display.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_RGB_Display.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_RGB_Display.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_RGB_Display.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_RM67162.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_RM67162.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_RM67162.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_RM67162.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_RM690B0.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_RM690B0.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_RM690B0.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_RM690B0.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SEPS525.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SEPS525.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SEPS525.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SEPS525.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SH1106.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SH1106.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SH1106.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SH1106.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SH8601.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SH8601.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SH8601.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SH8601.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SPD2010.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SPD2010.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SPD2010.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SPD2010.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SSD1283A.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SSD1283A.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SSD1283A.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SSD1283A.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SSD1306.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SSD1306.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SSD1306.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SSD1306.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SSD1331.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SSD1331.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SSD1331.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SSD1331.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SSD1351.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SSD1351.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_SSD1351.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_SSD1351.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ST7735.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ST7735.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ST7735.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ST7735.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ST7789.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ST7789.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ST7789.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ST7789.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ST77916.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ST77916.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ST77916.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ST77916.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ST7796.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ST7796.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_ST7796.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_ST7796.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_WEA2012.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_WEA2012.cpp\"",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": ".pio/libdeps/megaatmega2560/GFX Library for Arduino/src/display/Arduino_WEA2012.cpp",
+        "output": ".pio/build/megaatmega2560/liba68/GFX Library for Arduino/display/Arduino_WEA2012.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/libe28/Joystick/Joystick.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Ilib/Joystick -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega lib/Joystick/Joystick.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "lib/Joystick/Joystick.cpp",
+        "output": ".pio/build/megaatmega2560/libe28/Joystick/Joystick.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib423/Keyboard/Keyboard.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Ilib/Keyboard \"-I.pio/libdeps/megaatmega2560/Adafruit Keypad\" -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega lib/Keyboard/Keyboard.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "lib/Keyboard/Keyboard.cpp",
+        "output": ".pio/build/megaatmega2560/lib423/Keyboard/Keyboard.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/src/GameManager.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Iinclude -Isrc -Ilib/Keyboard -Ilib/Joystick \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" \"-I.pio/libdeps/megaatmega2560/Adafruit Keypad\" \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega src/GameManager.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "src/GameManager.cpp",
+        "output": ".pio/build/megaatmega2560/src/GameManager.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/src/main.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Iinclude -Isrc -Ilib/Keyboard -Ilib/Joystick \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" \"-I.pio/libdeps/megaatmega2560/Adafruit Keypad\" \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega src/main.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "src/main.cpp",
+        "output": ".pio/build/megaatmega2560/src/main.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/src/minigames/ButtonMash.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Iinclude -Isrc -Ilib/Keyboard -Ilib/Joystick \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" \"-I.pio/libdeps/megaatmega2560/Adafruit Keypad\" \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega src/minigames/ButtonMash.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "src/minigames/ButtonMash.cpp",
+        "output": ".pio/build/megaatmega2560/src/minigames/ButtonMash.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/src/minigames/FallingBlocks.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Iinclude -Isrc -Ilib/Keyboard -Ilib/Joystick \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" \"-I.pio/libdeps/megaatmega2560/Adafruit Keypad\" \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega src/minigames/FallingBlocks.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "src/minigames/FallingBlocks.cpp",
+        "output": ".pio/build/megaatmega2560/src/minigames/FallingBlocks.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/src/minigames/GameRegistry.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Iinclude -Isrc -Ilib/Keyboard -Ilib/Joystick \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" \"-I.pio/libdeps/megaatmega2560/Adafruit Keypad\" \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega src/minigames/GameRegistry.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "src/minigames/GameRegistry.cpp",
+        "output": ".pio/build/megaatmega2560/src/minigames/GameRegistry.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/src/minigames/ReactionTime.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Iinclude -Isrc -Ilib/Keyboard -Ilib/Joystick \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" \"-I.pio/libdeps/megaatmega2560/Adafruit Keypad\" \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega src/minigames/ReactionTime.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "src/minigames/ReactionTime.cpp",
+        "output": ".pio/build/megaatmega2560/src/minigames/ReactionTime.cpp.o"
+    },
+    {
+        "command": "/home/luimu/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/src/minigames/SpinJoyStickGame.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60118 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Iinclude -Isrc -Ilib/Keyboard -Ilib/Joystick \"-I.pio/libdeps/megaatmega2560/GFX Library for Arduino/src\" \"-I.pio/libdeps/megaatmega2560/Adafruit Keypad\" \"-I.pio/libdeps/megaatmega2560/Adafruit GFX Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/luimu/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/luimu/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/luimu/.platformio/packages/framework-arduino-avr/variants/mega src/minigames/SpinJoyStickGame.cpp",
+        "directory": "/home/luimu/Documents/school/SJOM/Arduino-multigame-arcade",
+        "file": "src/minigames/SpinJoyStickGame.cpp",
+        "output": ".pio/build/megaatmega2560/src/minigames/SpinJoyStickGame.cpp.o"
+    }
+]
