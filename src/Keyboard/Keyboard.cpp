@@ -32,23 +32,25 @@ Keyboard::Keyboard()
 
 void Keyboard::update() 
 {
-  const uint32_t currentTime = millis();
-  if ((currentTime - lastKeyPressTime) < DEBOUNCE_COOLDOWN_MS)
-  {
-    return;
-  }
-
   keypad.tick();
+
   while (keypad.available()) 
   {
     keypadEvent e = keypad.read();
 
-    if (e.bit.EVENT != KEY_JUST_PRESSED) 
+    if (e.bit.EVENT != KEY_JUST_PRESSED)
     {
-        continue;
+      continue;
     }
 
-    lastKeyPressTime = currentTime;
+    const uint32_t currentTime = millis();
+
+    if ((currentTime - lastKeyPressTime) < DEBOUNCE_COOLDOWN_MS)
+    {
+      continue;
+    }
+
+    lastKeyPressTime = currentTime; 
 
     KeyEvent ev;
     ev.key = (char)e.bit.KEY;
