@@ -46,7 +46,11 @@ void ButtonMashGame::update(uint32_t deltaTime, Keyboard& keyboard, Joystick& Jo
 
 void ButtonMashGame::render(uint32_t deltaTime, Arduino_GFX& gfx)
 {
-
+  gfx.fillScreen(RGB565_BLACK);
+  gfx.setCursor(random(gfx.width()), random(gfx.height()));
+  gfx.setTextColor(random(0xffff), random(0xffff));
+  gfx.setTextSize(random(6), random(6) , random(2) );
+  gfx.println("mashaa nappeja");
 }
 
 void ButtonMashGame::cleanup()
