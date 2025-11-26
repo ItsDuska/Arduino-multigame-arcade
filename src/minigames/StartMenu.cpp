@@ -1,4 +1,4 @@
-#include "StartMenu.h"
+#include "minigames/StartMenu.h"
 
 /*
 constexpr char *menuStrings = {
@@ -8,32 +8,17 @@ constexpr char *menuStrings = {
     "Quit"};
 */
 
-StartMenu::StartMenu(char *playerName)
-{
-}
+StartMenu::StartMenu(char *playerName) {}
 
-void StartMenu::init()
-{
-}
+void StartMenu::init() {}
 
-void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard, Joystick &Joystick)
-{
-}
+void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
+                       Joystick &Joystick) {}
 
-void StartMenu::render(uint32_t deltaTime, Arduino_GFX &gfx)
-{
-}
+void StartMenu::render(uint32_t deltaTime, Arduino_GFX &gfx) {}
 
-void StartMenu::cleanup()
-{
-}
+void StartMenu::cleanup() {}
 
-bool StartMenu::isComplete()
-{
-    return false;
-}
+bool StartMenu::isComplete() { return false; }
 
-const char *StartMenu::getName()
-{
-    return nullptr;
-}
+const char *StartMenu::getName() { return nullptr; }

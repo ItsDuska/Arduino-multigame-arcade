@@ -6,7 +6,8 @@ Joystick joystick(A0, A1, A2);
 void setup() { Serial.begin(9600); }
 
 void loop() {
-  Vec2u16 tempPos = joystick.readPosition();
+  joystick.readPosition();
+  joystick.getPosition();
   switch (joystick.convertPositionToDirection()) {
   case Joystick::Direction::UP:
     Serial.println("UP");
