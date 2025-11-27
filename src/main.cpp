@@ -84,19 +84,8 @@ int main(int argc, char *argv[]) {
 
     // --- ARDUINO LOOP ---
     loop();
+    Arduino_GFX::refreshGlobalInstance();
 
-    // --- RUUDUN PÄIVITYS ---
-    // GameManager on piirtänyt puskuriin, nyt siirretään se ruudulle.
-    // Oletamme että MockDisplay-luokassasi on staattinen tai globaali pääsy
-    // renderöintiin, tai GameManagerilla on "render()"-kutsu. Yksinkertaisin
-    // tapa: MockDisplay päivittää SDL_Texturea automaattisesti
-    // draw-komennoilla, ja tässä vain flippaat puskurin.
-
-    // (Jos MockDisplay hallinnoi rendereriä sisäisesti, lisää sinne
-    // 'updateScreen()' metodi ja kutsu sitä tässä) Esim:
-    // MockDisplay::updateWindow();
-
-    // Rajoita FPS n. 60:een ettei CPU sula
     uint32_t frameTime = SDL_GetTicks() - startTicks;
     if (frameTime < 16)
       SDL_Delay(16 - frameTime);

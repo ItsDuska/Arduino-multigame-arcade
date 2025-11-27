@@ -44,14 +44,10 @@ void GameManager::update() {
 
   switch (currentState) {
   case GameState::STATE_MENU:
-    Serial.println("Displaying Main Menu");
-    // add main menu here
     gfx->setCursor(100, 100);
     gfx->setTextColor(RGB565_WHITE, RGB565_BLACK);
     gfx->setTextSize(2);
     gfx->print("Main Menu");
-    // Testauksen ajaksi
-    delay(100);
     break;
 
   case GameState::STATE_GAME_INIT:
