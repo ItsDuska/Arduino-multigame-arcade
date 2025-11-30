@@ -4,7 +4,7 @@ ReactionTimeGame::ReactionTimeGame()
     : phase(WAITING), phaseStartTime(0), waitDuration(0), reactionTime(0),
       gameComplete(false) {}
 
-void ReactionTimeGame::init() {
+void ReactionTimeGame::init(Arduino_GFX &gfx) {
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, LOW);
 
@@ -63,7 +63,5 @@ void ReactionTimeGame::cleanup() {
   digitalWrite(LED_PIN, LOW);
   pinMode(LED_PIN, INPUT);
 }
-
-bool ReactionTimeGame::isComplete() { return gameComplete; }
 
 const char *ReactionTimeGame::getName() { return "Reaction Time"; }

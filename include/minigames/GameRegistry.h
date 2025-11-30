@@ -3,15 +3,7 @@
 
 #include "GameInterface.h"
 
-#include "ButtonMash.h"
-#include "ReactionTime.h"
-#include "SpinJoyStickGame.h"
-#include "FallingBlocks.h"
-
-
-
-Game* createGame(uint8_t gameIndex);
-
+Game *createGame(uint8_t gameIndex);
 
 constexpr uint8_t GAME_COUNT = 1;
 

@@ -3,7 +3,7 @@
 ButtonMashGame::ButtonMashGame()
     : score(0), startTime(0), gameComplete(false), lastButtonState(false) {}
 
-void ButtonMashGame::init() {
+void ButtonMashGame::init(Arduino_GFX &gfx) {
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   score = 0;
   startTime = millis();
@@ -47,7 +47,5 @@ void ButtonMashGame::render(uint32_t deltaTime, Arduino_GFX &gfx) {
 }
 
 void ButtonMashGame::cleanup() { pinMode(BUTTON_PIN, INPUT); }
-
-bool ButtonMashGame::isComplete() { return gameComplete; }
 
 const char *ButtonMashGame::getName() { return "Button Mash"; }

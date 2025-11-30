@@ -3,7 +3,7 @@
 JoystickSpinGame::JoystickSpinGame()
     : startTime(0), score(0), gameComplete(false), currentStage(Stage::UP) {}
 
-void JoystickSpinGame::init() {
+void JoystickSpinGame::init(Arduino_GFX &gfx) {
   startTime = millis();
   score = 0;
   currentStage = Stage::UP;
@@ -61,7 +61,5 @@ void JoystickSpinGame::render(uint32_t deltaTime, Arduino_GFX &gfx) {}
 void JoystickSpinGame::cleanup() {
   // Nothing necessary here
 }
-
-bool JoystickSpinGame::isComplete() { return gameComplete; }
 
 const char *JoystickSpinGame::getName() { return "Joystick Spin"; }

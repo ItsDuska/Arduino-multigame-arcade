@@ -1,10 +1,10 @@
 #pragma once
 #include "GameInterface.h"
 
-class GameManager;
-class StartMenu : public Game {
+class PlayerStatManager;
+class EndScreen : public Game {
 public:
-  StartMenu(GameManager *gameManager);
+  EndScreen(PlayerStatManager *statManager, uint16_t newScore);
   void init(Arduino_GFX &gfx) override;
   void update(uint32_t deltaTime, Keyboard &keyboard,
               Joystick &Joystick) override;
@@ -14,6 +14,9 @@ public:
   const char *getName() override;
 
 private:
-  uint8_t currentLineIndex = 0;
-  GameManager *gameManager;
+  uint32_t interval = 5000;
+  uint32_t lastTime = 0;
+
+  PlayerStatManager *statManager;
+  uint16_t lastScore;
 };

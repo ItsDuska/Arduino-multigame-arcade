@@ -1,4 +1,6 @@
 #include "GameManager.h"
+#include "minigames/EndScreen.h"
+#include "minigames/StartMenu.h"
 
 #define PIN_RD A7
 #define PIN_WR A6
@@ -9,11 +11,13 @@
 #define JOYSTICK_PIN_A 0
 #define JOYSTICK_PIN_B 1
 #define JOYSTICK_PIN_C 2
+#define MAIN_MENU_GAME_INDEX 0
 
 GameManager::GameManager()
     : currentState(GameState::STATE_MENU), currentGameIndex(0),
       totalGames(GAME_COUNT), activeGame(nullptr), lastUpdateTime(0),
-      joystick(JOYSTICK_PIN_A, JOYSTICK_PIN_B, JOYSTICK_PIN_C) {}
+      joystick(JOYSTICK_PIN_A, JOYSTICK_PIN_B, JOYSTICK_PIN_C),
+      playerStatManager(0) {}
 
 GameManager::~GameManager() {
   delete gfx;
@@ -25,6 +29,7 @@ void GameManager::init() {
                            A13, A12, A11, A10);
   gfx = new Arduino_R61529(bus, PIN_RST, 0, false);
 
+  playerStatManager.read();
   gfx->begin();
   gfx->setRotation(1);
   gfx->fillScreen(RGB565_BLACK);
@@ -32,6 +37,7 @@ void GameManager::init() {
   Serial.println("=== Multi-Game Arcade ===");
   Serial.print("Total games: ");
   Serial.println(totalGames);
+
   currentState = GameState::STATE_MENU;
 }
 
@@ -45,10 +51,11 @@ void GameManager::update() {
 
   switch (currentState) {
   case GameState::STATE_MENU:
-    gfx->setCursor(100, 100);
-    gfx->setTextColor(RGB565_WHITE, RGB565_BLACK);
-    gfx->setTextSize(2);
-    gfx->print("Main Menu");
+    gfx->fillScreen(RGB565_BLACK);
+    activeGame = new StartMenu(this);
+    activeGame->init(*gfx);
+    lostGameCount = 0;
+    currentState = GameState::STATE_GAME_RUNNING;
     break;
 
   case GameState::STATE_GAME_INIT:
@@ -56,46 +63,59 @@ void GameManager::update() {
     break;
 
   case GameState::STATE_GAME_RUNNING:
-    if (activeGame) {
-      activeGame->update(deltaTime, keyboard, joystick);
-      activeGame->render(deltaTime, *gfx);
-
-      if (activeGame->isComplete()) {
-        currentState = GameState::STATE_GAME_OVER;
-      }
-    }
+    processActiveGameFrame(deltaTime);
     break;
 
   case GameState::STATE_GAME_OVER:
+    Serial.print("GAME OVER\n");
+    currentState = GameState::STATE_GAME_INIT;
+    updateScore();
     cleanupCurrentGame();
-    currentGameIndex++;
 
-    if (currentGameIndex >= totalGames) {
-      currentState = GameState::STATE_ALL_COMPLETE;
-    } else {
-      currentState = GameState::STATE_GAME_INIT;
-    }
     break;
 
   case GameState::STATE_ALL_COMPLETE:
+    //  TODO: Tallenna tässä high score eepromiin
+    gfx->fillScreen(RGB565_BLACK);
+    playerStatManager.add(currentScore);
+    playerStatManager.save();
+    if (!activeGame) {
+      activeGame = new EndScreen(&playerStatManager, currentScore);
+      activeGame->init(*gfx);
+    }
 
-    currentGameIndex = 0;
-    currentState = GameState::STATE_MENU;
+    processActiveGameFrame(deltaTime);
+
+    if (activeGame->isComplete()) {
+      cleanupCurrentGame();
+      currentState = GameState::STATE_MENU;
+    }
+
     break;
   }
 }
 
-void GameManager::initNextGame() {
+void GameManager::initNextGame(uint8_t gameIndex) {
   Serial.print("Loading game ");
   Serial.print(currentGameIndex + 1);
   Serial.print("/");
   Serial.println(totalGames);
 
-  activeGame = createGame(currentGameIndex);
+  if (_overrideGameIndex) {
+    gameIndex = currentGameIndex;
+  } else if (gameIndex == RANDOM_GAME_FLAG) {
+    gameIndex = random(0, totalGames);
+  }
+  activeGame = createGame(gameIndex);
 
   if (activeGame) {
-    activeGame->init();
+    activeGame->init(*gfx);
     currentState = GameState::STATE_GAME_RUNNING;
+    const char *gameName = activeGame->getName();
+    if (gameName) {
+      Serial.print("Game name: ");
+      Serial.println(gameName);
+    }
   } else {
     Serial.println("ERROR: Failed to create game");
     currentState = GameState::STATE_ALL_COMPLETE;
@@ -107,5 +127,39 @@ void GameManager::cleanupCurrentGame() {
     activeGame->cleanup();
     delete activeGame;
     activeGame = nullptr;
+  }
+}
+
+void GameManager::updateScore() {
+  if (activeGame) {
+    GameStats stats = activeGame->getGameStatus();
+    currentScore += stats.score;
+
+    if (!stats.gameStatus) {
+      lostGameCount++;
+      if (lostGameCount >= maxLostGames) {
+        Serial.println("Maximum lost games reached");
+        // n määrä hävitty joten peli on kokonaan ohi. Mene takaisin Main Menuun
+        currentState = GameState::STATE_ALL_COMPLETE;
+      }
+    }
+  }
+}
+
+void GameManager::overrideGameIndex(uint8_t gameIndex) {
+  currentGameIndex = gameIndex;
+  _overrideGameIndex = true;
+}
+
+void GameManager::processActiveGameFrame(uint32_t deltaTime) {
+  if (!activeGame) {
+    return;
+  }
+
+  activeGame->update(deltaTime, keyboard, joystick);
+  activeGame->render(deltaTime, *gfx);
+
+  if (activeGame->isComplete()) {
+    currentState = GameState::STATE_GAME_OVER;
   }
 }

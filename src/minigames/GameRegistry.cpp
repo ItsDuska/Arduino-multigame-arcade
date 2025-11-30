@@ -1,11 +1,17 @@
 #include <minigames/GameRegistry.h>
 
+#include "minigames/ButtonMash.h"
+#include "minigames/FallingBlocks.h"
+#include "minigames/ReactionTime.h"
+#include "minigames/SpinJoyStickGame.h"
+
 Game *createGame(uint8_t gameIndex) {
   switch (gameIndex) {
-  // kokeillaan ensin yhtä tarkemmin ja katotaan toimiiko se edes
+  // INFO: Jokaisella pelillä on oma index, se index arvotaan aina
+  // satunnaisesti
   case 0:
-    return new ButtonMashGame();
-    // case 1: return new ReactionTimeGame();
+    return new FallingBlocks();
+    // return new ReactionTimeGame();
     // case 2: return new JoystickSpinGame();
     // case 3: return new FallingBlocks();
 

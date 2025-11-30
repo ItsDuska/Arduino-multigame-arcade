@@ -1,68 +1,48 @@
 #include "PlayerStatManager.h"
-#include <string.h>
-
 #include <HardwareWrapper.h>
 
 PlayerStatManager::PlayerStatManager(uint16_t eepromAddress)
-    : baseAddress(eepromAddress) {}
+    : baseAddress(eepromAddress) {
+  read();
+}
 
-void PlayerStatManager::add(const PlayerStat &newStat) {
-  // Näiden pitäisi olla valmiiksi jo järjestyksessä,
-  //  joten tämän voisi vetää nopeammin, mutta se ei niin haittaa,
-  //  sillä tätä kutsutaan niin harvoin.
-  if (uniquePlayer(newStat)) {
-    return;
+void PlayerStatManager::add(uint16_t newScore) {
+  uint8_t minIndex = 0;
+  for (uint8_t i = 1; i < MAX_PLAYER_COUNT; i++) {
+    if (stats[i].score < stats[minIndex].score) {
+      minIndex = i;
+    }
   }
 
-  stats[MAX_PLAYER_COUNT - 1] = newStat;
+  if (newScore > stats[minIndex].score) {
+    stats[minIndex].score = newScore;
+  }
 
-  for (int i = 0; i < MAX_PLAYER_COUNT - 1; i++) {
-    for (int j = i + 1; j < MAX_PLAYER_COUNT; j++) {
+  for (uint8_t i = 0; i < MAX_PLAYER_COUNT - 1; i++) {
+    for (uint8_t j = i + 1; j < MAX_PLAYER_COUNT; j++) {
       if (stats[j].score > stats[i].score) {
-        PlayerStat temp = stats[i];
-        stats[i] = stats[j];
-        stats[j] = temp;
+        uint16_t tmp = stats[i].score;
+        stats[i].score = stats[j].score;
+        stats[j].score = tmp;
       }
     }
   }
 }
 
 void PlayerStatManager::save() {
-  int addr = baseAddress;
-  for (int i = 0; i < MAX_PLAYER_COUNT; i++) {
-
-    for (int j = 0; j < 5; j++) {
-      EEPROM.update(addr++, stats[i].name[j]);
-    }
-
-    for (int j = 0; j < 2; j++) {
-      EEPROM.update(addr++, (stats[i].score >> (8 * j)) & 0xFF);
-    }
+  uint16_t addr = baseAddress;
+  for (uint8_t i = 0; i < MAX_PLAYER_COUNT; i++) {
+    EEPROM.update(addr++, stats[i].score & 0xFF);
+    EEPROM.update(addr++, (stats[i].score >> 8) & 0xFF);
   }
 }
 
 void PlayerStatManager::read() {
   uint16_t addr = baseAddress;
-  for (int i = 0; i < MAX_PLAYER_COUNT; i++) {
-    for (int j = 0; j < 5; j++) {
-      stats[i].name[j] = EEPROM.read(addr++);
-    }
-
-    stats[i].score = 0;
-    for (int j = 0; j < 2; j++) {
-      stats[i].score |= ((uint16_t)EEPROM.read(addr++)) << (8 * j);
-    }
-  }
-}
-
-bool PlayerStatManager::uniquePlayer(const PlayerStat &newStat) {
   for (uint8_t i = 0; i < MAX_PLAYER_COUNT; i++) {
-    if (strncmp(stats[i].name, newStat.name, MAX_NAME_LEN)) {
-      if (newStat.score > stats[i].score) {
-        stats[i].score = newStat.score;
-      }
-      return false;
-    }
+    stats[i].score = EEPROM.read(addr++);
+    stats[i].score |= ((uint16_t)EEPROM.read(addr++)) << 8;
   }
-  return true;
 }
+
+PlayerStat *PlayerStatManager::getStats() { return stats; }
