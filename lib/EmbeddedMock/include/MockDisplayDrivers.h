@@ -17,10 +17,10 @@ public:
 };
 
 // Perii Arduino_GFX:n, jotta piirtokomennot toimivat
-class Arduino_R61529 : public Arduino_GFX {
+class Arduino_ILI9341 : public Arduino_GFX {
 public:
   // Konstruktori vastaa GameManagerin kutsua: (bus, rst, rotation, ips)
-  Arduino_R61529(Arduino_DataBus *bus, int8_t rst, uint8_t r, bool ips)
+  Arduino_ILI9341(Arduino_DataBus *bus, int8_t rst, uint8_t r, bool ips)
       : Arduino_GFX(320, 240) // Asetetaan resoluutio (leveys, korkeus)
   {}
 };

@@ -14,7 +14,7 @@ public:
   FallingBlocks();
   void init(Arduino_GFX &gfx) override;
   void update(uint32_t deltaTime, Keyboard &keyboard,
-              Joystick &Joystick) override;
+              Joystick &joystick) override;
   void render(uint32_t deltaTime, Arduino_GFX &gfx) override;
   void cleanup() override;
   const char *getName() override;
@@ -28,10 +28,12 @@ private:
 
 private:
   Obstacle obstacles[MAX_OBSTACLES];
+  Obstacle obstaclesLastPos[MAX_OBSTACLES];
   uint32_t lastSpawnTime;
   uint32_t lastMoveTime;
   uint16_t score;
   uint8_t playerX;
+  uint8_t lastPlayerX;
   uint16_t speed;
   uint32_t spawnInterval;
   uint16_t gamesPlayed = 1;

@@ -2,11 +2,11 @@
 #include "minigames/EndScreen.h"
 #include "minigames/StartMenu.h"
 
-#define PIN_RD A7
-#define PIN_WR A6
-#define PIN_RS A5
-#define PIN_CS A4
-#define PIN_RST A3
+#define PIN_RD A6
+#define PIN_WR A5
+#define PIN_RS A4
+#define PIN_CS A3
+#define PIN_RST A7
 
 #define JOYSTICK_PIN_A 0
 #define JOYSTICK_PIN_B 1
@@ -25,14 +25,15 @@ GameManager::~GameManager() {
 }
 
 void GameManager::init() {
-  bus = new Arduino_SWPAR8(PIN_RS, PIN_CS, PIN_WR, PIN_RD, A9, A8, A15, A14,
-                           A13, A12, A11, A10);
-  gfx = new Arduino_R61529(bus, PIN_RST, 0, false);
+  bus = new Arduino_SWPAR8(PIN_RS, PIN_CS, PIN_WR, PIN_RD, A8, A9, A10, A11,
+                           A12, A13, A14, A15);
+  gfx = new Arduino_ILI9341(bus, PIN_RST, 0, false);
 
   playerStatManager.read();
   gfx->begin();
   gfx->setRotation(1);
   gfx->fillScreen(RGB565_BLACK);
+  gfx->setRotation(3);
 
   Serial.println("=== Multi-Game Arcade ===");
   Serial.print("Total games: ");
