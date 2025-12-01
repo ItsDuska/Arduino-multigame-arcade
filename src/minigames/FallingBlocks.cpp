@@ -19,12 +19,18 @@ float min(float a, float b) { return (a < b) ? a : b; }
 FallingBlocks::FallingBlocks()
     : playerX(COLS / 2), lastSpawnTime(0), lastMoveTime(0), score(0) {}
 
-void FallingBlocks::init(Arduino_GFX &gfx) { adjustDifficulty(); }
+void FallingBlocks::init(Arduino_GFX &gfx) {
+  gfx.fillScreen(COLOR_BG);
+  adjustDifficulty();
+}
 
 void FallingBlocks::update(uint32_t deltaTime, Keyboard &keyboard,
                            Joystick &joystick) {
   if (gameComplete)
     return;
+
+  memcpy(&obstaclesLastPos, &obstacles, sizeof(Obstacle) * MAX_OBSTACLES);
+  lastPlayerX = playerX;
 
   handlePlayerInput(keyboard, joystick);
 
@@ -44,11 +50,22 @@ void FallingBlocks::update(uint32_t deltaTime, Keyboard &keyboard,
 }
 
 void FallingBlocks::render(uint32_t deltaTime, Arduino_GFX &gfx) {
-  gfx.fillScreen(COLOR_BG);
 
   int cellWidth = gfx.width() / COLS;
   int cellHeight = gfx.height() / ROWS;
 
+  // poistetaan ensin vain vanhat piirrokset.
+  // Poistetaan vain vanhat
+  for (int i = 0; i < MAX_OBSTACLES; i++) {
+      if (obstaclesLastPos[i].active) {
+          gfx.fillRect(obstaclesLastPos[i].x * cellWidth,
+                       obstaclesLastPos[i].y * cellHeight,
+                       cellWidth, cellHeight, COLOR_BG);
+      }
+  }
+
+
+  // Sitten piirretään uudet
   for (int i = 0; i < MAX_OBSTACLES; i++) {
     if (obstacles[i].active) {
       gfx.fillRect(obstacles[i].x * cellWidth, obstacles[i].y * cellHeight,
@@ -56,9 +73,19 @@ void FallingBlocks::render(uint32_t deltaTime, Arduino_GFX &gfx) {
     }
   }
 
+  // siivotaan vanha pelaaja.
+  gfx.fillRect(lastPlayerX * cellWidth, (ROWS - 1) * cellHeight, cellWidth,
+               cellHeight, COLOR_BG);
+
+  // Piirretään pelaaja.
   gfx.fillRect(playerX * cellWidth, (ROWS - 1) * cellHeight, cellWidth,
                cellHeight, COLOR_PLAYER);
 
+
+  // siivotaan teksti.
+  gfx.fillRect(0, 0, 50, 20, COLOR_BG);
+
+  // TODO: PIIRRÄ MUSTA RUUTU SCOREN PÄÄLLE KOSKA EMME ENÄÄ CLEARAA RUUTUA.
   gfx.setCursor(0, 0);
   gfx.setTextColor(RGB565_WHITE, COLOR_BG);
   gfx.setTextSize(1);
