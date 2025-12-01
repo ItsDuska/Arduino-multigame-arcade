@@ -1,5 +1,6 @@
 #include "GameManager.h"
 #include "minigames/EndScreen.h"
+#include "minigames/LevelSelector.h"
 #include "minigames/StartMenu.h"
 
 #define PIN_RD A6
@@ -58,6 +59,13 @@ void GameManager::update() {
     lostGameCount = 0;
     currentState = GameState::STATE_GAME_RUNNING;
     break;
+    case GameState::STATE_LEVEL_SELECT:
+      gfx->fillScreen(RGB565_BLACK);
+      activeGame = new LevelSelector(this);
+      activeGame->init(*gfx);
+      currentState = GameState::STATE_GAME_RUNNING;
+      break;
+
 
   case GameState::STATE_GAME_INIT:
     initNextGame();
@@ -65,21 +73,31 @@ void GameManager::update() {
 
   case GameState::STATE_GAME_RUNNING:
     processActiveGameFrame(deltaTime);
+    if (overrideState != GameState::STATE_NULL)
+    {
+      currentState = overrideState;
+      overrideState = GameState::STATE_NULL;
+    }
     break;
 
   case GameState::STATE_GAME_OVER:
     Serial.print("GAME OVER\n");
-    currentState = GameState::STATE_GAME_INIT;
+    if (overrideState != GameState::STATE_NULL)
+    {
+      currentState = overrideState;
+    }
+    else{
+      currentState = GameState::STATE_GAME_INIT;
+    }
     updateScore();
     cleanupCurrentGame();
 
     break;
 
   case GameState::STATE_ALL_COMPLETE:
-    //  TODO: Tallenna tässä high score eepromiin
-    playerStatManager.add(currentScore);
-    playerStatManager.save();
     if (!activeGame) {
+      playerStatManager.add(currentScore);
+      playerStatManager.save();
       activeGame = new EndScreen(&playerStatManager, currentScore);
       activeGame->init(*gfx);
     }
@@ -146,7 +164,25 @@ void GameManager::updateScore() {
   }
 }
 
-void GameManager::overrideGameIndex(uint8_t gameIndex) {
+void GameManager::overrideGameIndex(uint8_t gameIndex, bool isMenu) {
+  if (isMenu)
+  {
+    Serial.println(gameIndex);
+    Serial.print("aaaaaa");
+    switch(gameIndex)
+    {
+    case 1:
+      overrideState = GameState::STATE_LEVEL_SELECT;
+      Serial.print("amogus");
+    break;
+    default:
+      break;
+    } // tähän voi lisää muita menuja jos niitä tulee.
+  }
+  else {
+    overrideState = GameState::STATE_NULL;
+  }
+
   currentGameIndex = gameIndex;
   _overrideGameIndex = true;
 }
@@ -160,6 +196,15 @@ void GameManager::processActiveGameFrame(uint32_t deltaTime) {
   activeGame->render(deltaTime, *gfx);
 
   if (activeGame->isComplete()) {
-    currentState = GameState::STATE_GAME_OVER;
+    if (overrideState != GameState::STATE_NULL) {
+      currentState = overrideState;
+      overrideState = GameState::STATE_NULL; // <- nollaus tärkeä!
+    } else {
+      currentState = GameState::STATE_GAME_OVER;
+    }
   }
+}
+
+void GameManager::setScore(uint16_t score) {
+  currentScore = score;
 }

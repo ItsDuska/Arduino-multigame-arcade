@@ -12,10 +12,12 @@
 
 enum class GameState : char {
   STATE_MENU,
+  STATE_LEVEL_SELECT,
   STATE_GAME_INIT,
   STATE_GAME_RUNNING,
   STATE_GAME_OVER,
-  STATE_ALL_COMPLETE
+  STATE_ALL_COMPLETE,
+  STATE_NULL
 };
 
 class GameManager {
@@ -27,7 +29,9 @@ public:
   void init();
   void update();
 
-  void overrideGameIndex(uint8_t gameIndex);
+  void overrideGameIndex(uint8_t gameIndex, bool isMenu = false);
+  // käytät tätä scoren resetointii koska jooh.
+  void setScore(uint16_t score);
 
 private:
   void processActiveGameFrame(uint32_t deltaTime);
@@ -40,6 +44,7 @@ private:
   uint8_t currentGameIndex;
   uint8_t totalGames;
   bool _overrideGameIndex = false;
+  GameState overrideState;
 
   uint16_t currentScore = 0;
   uint8_t lostGameCount = 1;

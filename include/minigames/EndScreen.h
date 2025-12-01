@@ -14,7 +14,7 @@ public:
   const char *getName() override;
 
 private:
-  uint32_t interval = 5000;
+  uint32_t interval = 2500;
   uint32_t lastTime = 0;
 
   PlayerStatManager *statManager;
