@@ -77,7 +77,6 @@ void GameManager::update() {
 
   case GameState::STATE_ALL_COMPLETE:
     //  TODO: Tallenna tässä high score eepromiin
-    gfx->fillScreen(RGB565_BLACK);
     playerStatManager.add(currentScore);
     playerStatManager.save();
     if (!activeGame) {
