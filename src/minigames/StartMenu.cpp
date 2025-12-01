@@ -9,8 +9,8 @@ constexpr const char *menuStrings[] = {"Play", "Level Selector", "Stats", "Reset
 constexpr uint8_t MENU_STRINGS_COUNT =
     sizeof(menuStrings) / sizeof(menuStrings[0]);
 
-StartMenu::StartMenu(GameManager *gameManager)
-    : currentLineIndex(0), gameManager(gameManager) {}
+StartMenu::StartMenu(GameManager *gameManager, PlayerStatManager *playerStatManager)
+    : currentLineIndex(0), gameManager(gameManager), playerStatManager(playerStatManager) {}
 
 void StartMenu::init(Arduino_GFX &gfx) {
   gfx.setTextColor(RGB565_WHITE, RGB565_BLACK);
@@ -31,7 +31,7 @@ void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
       } else if (keyEvent.key == '*') {
         int index = currentLineIndex;
         if (index == 3) {
-          gameManager->resetScores();
+          playerStatManager->resetScores();
         }
         else if (index == 2) {
           // Heitetään tahalleen error. Tämä vie meidän

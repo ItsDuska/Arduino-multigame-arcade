@@ -4,7 +4,7 @@ constexpr uint16_t COLOR_BG = RGB565_BLACK;
 constexpr uint16_t COLOR_PLAYER = RGB565_GREEN;
 constexpr uint16_t COLOR_OBSTACLE = RGB565_RED;
 
-constexpr int ROWS = 10;
+constexpr int ROWS = 12;
 constexpr int COLS = 6;
 
 constexpr uint32_t MIN_SPAWN_INTERVAL = 100;
