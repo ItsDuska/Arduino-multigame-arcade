@@ -14,6 +14,7 @@ public:
   void add(uint16_t newScore);
   void save();
   void read();
+  void resetScores();
   PlayerStat *getStats();
 
 private:

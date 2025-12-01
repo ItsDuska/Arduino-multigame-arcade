@@ -2,9 +2,11 @@
 #include "GameInterface.h"
 
 class GameManager;
+class PlayerStatManager;
+
 class StartMenu : public Game {
 public:
-  StartMenu(GameManager *gameManager);
+  StartMenu(GameManager *gameManager, PlayerStatManager *playerStatManager);
   void init(Arduino_GFX &gfx) override;
   void update(uint32_t deltaTime, Keyboard &keyboard,
               Joystick &Joystick) override;
@@ -16,4 +18,5 @@ public:
 private:
   uint8_t currentLineIndex = 0;
   GameManager *gameManager;
+  PlayerStatManager *playerStatManager;
 };

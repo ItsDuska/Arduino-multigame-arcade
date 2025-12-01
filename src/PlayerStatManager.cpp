@@ -45,4 +45,11 @@ void PlayerStatManager::read() {
   }
 }
 
+void PlayerStatManager::resetScores() {
+  for (uint8_t i = 0; i < MAX_PLAYER_COUNT; i++) {
+    stats[i].score = 0;
+  }
+  save();
+}
+
 PlayerStat *PlayerStatManager::getStats() { return stats; }

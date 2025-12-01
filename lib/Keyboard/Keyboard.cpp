@@ -1,5 +1,4 @@
 #include "Keyboard.h"
-#include "MockArduino.h"
 
 #ifdef TARGET_PC
 #include "MockInputState.h"

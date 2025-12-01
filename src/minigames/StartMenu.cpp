@@ -4,7 +4,7 @@
 constexpr char gameName[] = "MAIN MENU";
 constexpr uint8_t MENU_NAME_LEN = sizeof(gameName) - 1;
 
-constexpr const char *menuStrings[] = {"Play", "Level Selector", "Stats"};
+constexpr const char *menuStrings[] = {"Play", "Level Selector", "Stats", "Reset Scores"};
 
 constexpr uint8_t MENU_STRINGS_COUNT =
     sizeof(menuStrings) / sizeof(menuStrings[0]);
@@ -30,7 +30,10 @@ void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
         currentLineIndex = (currentLineIndex + 1) % MENU_STRINGS_COUNT;
       } else if (keyEvent.key == '*') {
         int index = currentLineIndex;
-        if (index == 2) {
+        if (index == 3) {
+          gameManager->resetScores();
+        }
+        else if (index == 2) {
           // Heitetään tahalleen error. Tämä vie meidän
           // automaattisesti siihen oikeeseen paikkaan lol.
           index = 500;
@@ -50,7 +53,6 @@ void StartMenu::render(uint32_t deltaTime, Arduino_GFX &gfx) {
   constexpr int charHeight = 8 * textScale;
   constexpr int lineSpacing = 6;
 
-  // Title
   const int titleWidth = MENU_NAME_LEN * charWidth;
   const int titleX = (screenWidth - titleWidth) / 2;
   const int titleY = 40;

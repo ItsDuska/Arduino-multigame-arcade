@@ -11,14 +11,31 @@ extern SDL_Window *sdlWindow;
 extern SDL_Renderer *sdlRenderer;
 #endif
 
-GameManager gameManager;
+//GameManager gameManager;
+PlayerStatManager playerStatManager(0);
+
 
 void setup() {
   Serial.begin(9600);
-  gameManager.init();
+
+  //playerStatManager.add(15);
+  //playerStatManager.add(18);
+  //playerStatManager.add(1);
+
+  //gameManager.init();
 }
 
-void loop() { gameManager.update(); }
+void loop() { //gameManager.update();
+
+    PlayerStat* stats = playerStatManager.getStats();
+    for (int i = 0; i < MAX_PLAYER_COUNT; i++) {
+        Serial.println(stats[i].score);
+    }
+    playerStatManager.save();
+    Serial.println("saved");
+    delay(1000);
+
+}
 
 // --- TÄMÄ OSA KÄÄNNETÄÄN VAIN PC:LLÄ ---
 #ifdef TARGET_PC

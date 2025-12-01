@@ -13,8 +13,9 @@ constexpr uint32_t MAX_SPAWN_INTERVAL = 500;
 constexpr uint32_t MIN_OBSTACLE_SPEED = 100;
 constexpr uint32_t MAX_OBSTACLE_SPEED = 300;
 
+#ifdef TARGET_PC
 float min(float a, float b) { return (a < b) ? a : b; }
-
+#endif
 FallingBlocks::FallingBlocks()
     : playerX(COLS / 2), lastSpawnTime(0), lastMoveTime(0), score(0) {}
 

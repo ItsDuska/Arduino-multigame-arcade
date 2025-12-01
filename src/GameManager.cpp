@@ -52,7 +52,7 @@ void GameManager::update() {
   switch (currentState) {
   case GameState::STATE_MENU:
     gfx->fillScreen(RGB565_BLACK);
-    activeGame = new StartMenu(this);
+    activeGame = new StartMenu(this, &playerStatManager);
     activeGame->init(*gfx);
     lostGameCount = 0;
     currentState = GameState::STATE_GAME_RUNNING;
