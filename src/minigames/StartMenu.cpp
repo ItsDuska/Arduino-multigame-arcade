@@ -4,13 +4,16 @@
 constexpr char gameName[] = "MAIN MENU";
 constexpr uint8_t MENU_NAME_LEN = sizeof(gameName) - 1;
 
-constexpr const char *menuStrings[] = {"Play", "Level Selector", "Stats", "Reset Scores"};
+constexpr const char *menuStrings[] = {"Play", "Level Selector", "Stats",
+                                       "Reset Scores"};
 
 constexpr uint8_t MENU_STRINGS_COUNT =
     sizeof(menuStrings) / sizeof(menuStrings[0]);
 
-StartMenu::StartMenu(GameManager *gameManager, PlayerStatManager *playerStatManager)
-    : currentLineIndex(0), gameManager(gameManager), playerStatManager(playerStatManager) {}
+StartMenu::StartMenu(GameManager *gameManager,
+                     PlayerStatManager *playerStatManager)
+    : currentLineIndex(0), gameManager(gameManager),
+      playerStatManager(playerStatManager) {}
 
 void StartMenu::init(Arduino_GFX &gfx) {
   gfx.setTextColor(RGB565_WHITE, RGB565_BLACK);
@@ -18,22 +21,16 @@ void StartMenu::init(Arduino_GFX &gfx) {
 }
 
 void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
-                       Joystick &Joystick) {
+                       Joystick &joystick) {
 
   while (keyboard.hasEvent()) {
-    Keyboard::KeyEvent keyEvent = keyboard.nextEvent();
-    if (keyEvent.type == Keyboard::KeyEvent::Type::PRESS) {
-      if (keyEvent.key == '5') {
-        currentLineIndex =
-            (currentLineIndex + MENU_STRINGS_COUNT - 1) % MENU_STRINGS_COUNT;
-      } else if (keyEvent.key == '8') {
-        currentLineIndex = (currentLineIndex + 1) % MENU_STRINGS_COUNT;
-      } else if (keyEvent.key == '*') {
+    Keyboard::KeyEvent ev = keyboard.nextEvent();
+    if (ev.type == Keyboard::KeyEvent::Type::PRESS) {
+      if (ev.key == '*') {
         int index = currentLineIndex;
         if (index == 3) {
           playerStatManager->resetScores();
-        }
-        else if (index == 2) {
+        } else if (index == 2) {
           // Heitetään tahalleen error. Tämä vie meidän
           // automaattisesti siihen oikeeseen paikkaan lol.
           index = 500;
@@ -42,6 +39,22 @@ void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
         gameComplete = true;
       }
     }
+  }
+
+  joystick.update();
+  joystick.getPosition();
+  Joystick::Direction dir = joystick.convertPositionToDirection();
+
+  switch (dir) {
+  case Joystick::Direction::UP:
+    currentLineIndex =
+        (currentLineIndex + MENU_STRINGS_COUNT - 1) % MENU_STRINGS_COUNT;
+    break;
+  case Joystick::Direction::DOWN:
+    currentLineIndex = (currentLineIndex + 1) % MENU_STRINGS_COUNT;
+    break;
+  default:
+    break;
   }
 }
 
