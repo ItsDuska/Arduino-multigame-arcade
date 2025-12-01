@@ -13,17 +13,15 @@ public:
   const char *getName() override;
 
 private:
-  const uint8_t LED_PIN = 13;
-  const uint16_t WAIT_TIME_MIN = 2000;
-  const uint16_t WAIT_TIME_MAX = 5000;
+  const uint16_t MAX_REACT_TIME = 50000;
+  const uint8_t TEST_ROUNDS = 5;
 
-  static constexpr char REACT_KEY = 'A';
-
-  enum GamePhase { WAITING, LED_ON, COMPLETE };
+  enum GamePhase { START, WAITING, REACTSCREEN, SPEED_DISPLAY, COMPLETE };
 
   GamePhase phase;
   uint32_t phaseStartTime;
-  uint32_t waitDuration;
   uint32_t reactionTime;
+  uint32_t testCount;
+  bool speedDisplayed;
   bool gameComplete;
 };
