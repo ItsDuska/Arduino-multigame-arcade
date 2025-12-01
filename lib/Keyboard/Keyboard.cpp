@@ -62,12 +62,6 @@ void Keyboard::update() {
 
     const uint32_t currentTime = millis();
 
-    if ((currentTime - lastKeyPressTime) < DEBOUNCE_COOLDOWN_MS) {
-      continue;
-    }
-
-    lastKeyPressTime = currentTime;
-
     KeyEvent ev;
     ev.key = (char)e.bit.KEY;
     ev.type = (e.bit.EVENT == KEY_JUST_PRESSED) ? KeyEvent::Type::PRESS
