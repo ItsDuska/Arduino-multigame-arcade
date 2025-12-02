@@ -134,9 +134,9 @@ int main(int argc, char *argv[]) {
     MockInputState::joyX = 512;
     MockInputState::joyY = 512;
     if (kbState[SDL_SCANCODE_UP])
-      MockInputState::joyY = 1023; // Tai 0 riippuen kytkennästä
-    if (kbState[SDL_SCANCODE_DOWN])
       MockInputState::joyY = 0;
+    if (kbState[SDL_SCANCODE_DOWN])
+      MockInputState::joyY = 1023;
     if (kbState[SDL_SCANCODE_LEFT])
       MockInputState::joyX = 0;
     if (kbState[SDL_SCANCODE_RIGHT])

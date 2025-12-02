@@ -17,13 +17,12 @@ StartMenu::StartMenu(GameManager *gameManager,
 void StartMenu::init(Arduino_GFX &gfx) {
   gfx.setTextColor(RGB565_WHITE, RGB565_BLACK);
   gfx.setTextSize(2);
+  isDirty = true;
 }
 
 void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
                        Joystick &joystick) {
   keyboard.update();
-  joystick.update();
-  joystick.getPosition();
 
   while (keyboard.hasEvent()) {
     Keyboard::KeyEvent ev = keyboard.nextEvent();
@@ -56,29 +55,51 @@ void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
         return;
       } else if (ev.key == '2') {
         currentLineIndex = (currentLineIndex - 1) % MENU_STRINGS_COUNT;
+        isDirty = true;
       } else if (ev.key == '8') {
         currentLineIndex =
             (currentLineIndex + MENU_STRINGS_COUNT + 1) % MENU_STRINGS_COUNT;
+        isDirty = true;
       }
     }
   }
 
+  joystick.update();
+  joystick.getPosition();
   Joystick::Direction dir = joystick.convertPositionToDirection();
 
-  switch (dir) {
-  case Joystick::Direction::UP:
-    currentLineIndex =
-        (currentLineIndex + MENU_STRINGS_COUNT - 1) % MENU_STRINGS_COUNT;
-    break;
-  case Joystick::Direction::DOWN:
-    currentLineIndex = (currentLineIndex + 1) % MENU_STRINGS_COUNT;
-    break;
-  default:
-    break;
+  uint32_t currentTime = millis();
+
+  if (currentTime - lastInputTime > INPUT_DELAY) {
+    bool moved = false;
+
+    switch (dir) {
+    case Joystick::Direction::UP:
+      currentLineIndex =
+          (currentLineIndex + MENU_STRINGS_COUNT - 1) % MENU_STRINGS_COUNT;
+      moved = true;
+      break;
+    case Joystick::Direction::DOWN:
+      currentLineIndex = (currentLineIndex + 1) % MENU_STRINGS_COUNT;
+      moved = true;
+      break;
+    default:
+      break;
+    }
+
+    if (moved) {
+      isDirty = true;
+      lastInputTime = currentTime;
+    }
   }
 }
 
 void StartMenu::render(uint32_t deltaTime, Arduino_GFX &gfx) {
+  if (!isDirty) {
+    return;
+  }
+  isDirty = false;
+
   const int screenWidth = gfx.width();
 
   constexpr int textScale = 2;

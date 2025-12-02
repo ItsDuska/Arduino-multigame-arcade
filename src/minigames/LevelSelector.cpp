@@ -5,14 +5,9 @@ constexpr char gameName[] = "LEVEL SELECTOR";
 constexpr uint8_t MENU_NAME_LEN = sizeof(gameName) - 1;
 
 constexpr const char *gameStrings[] = {
-  "Falling Blocks",
-  "Reaction Game",
-  "Button Smash",
-  "Maze Game",
-  "Kalastus", // Stardew valley fishig minigame
-  "Muisti Peli",
-  "Dino Peli"
-};
+    "Falling Blocks", "Reaction Game", "Button Smash", "Maze Game",
+    "Kalastus", // Stardew valley fishig minigame
+    "Muisti Peli",    "Dino Peli"};
 
 constexpr uint8_t MENU_STRINGS_COUNT =
     sizeof(gameStrings) / sizeof(gameStrings[0]);
@@ -26,7 +21,7 @@ void LevelSelector::init(Arduino_GFX &gfx) {
 }
 
 void LevelSelector::update(uint32_t deltaTime, Keyboard &keyboard,
-                       Joystick &joystick) {
+                           Joystick &joystick) {
 
   while (keyboard.hasEvent()) {
     Keyboard::KeyEvent ev = keyboard.nextEvent();
@@ -35,8 +30,11 @@ void LevelSelector::update(uint32_t deltaTime, Keyboard &keyboard,
 
         // WARNING: Muista laittaa GameRegisterissä pelit oikeeseen kohtaan.
         // Haluamme että tällä sais helposti pelin indexillä pelin pyöriin.
-        gameManager->overrideGameIndex(currentLineIndex); // mahdollinen offset tähän jos tarvii.
+        gameManager->overrideGameIndex(
+            currentLineIndex); // mahdollinen offset tähän jos tarvii.
         gameComplete = true;
+      } else if (ev.key == '0') {
+        gameManager->overrideGameIndex(0, true);
       }
     }
   }
@@ -45,24 +43,34 @@ void LevelSelector::update(uint32_t deltaTime, Keyboard &keyboard,
   joystick.getPosition();
   Joystick::Direction dir = joystick.convertPositionToDirection();
 
-  switch (dir) {
-  case Joystick::Direction::UP:
-    isDirty = true;
-    currentLineIndex =
-        (currentLineIndex + MENU_STRINGS_COUNT - 1) % MENU_STRINGS_COUNT;
-    break;
-  case Joystick::Direction::DOWN:
-    isDirty = true;
-    currentLineIndex = (currentLineIndex + 1) % MENU_STRINGS_COUNT;
-    break;
-  default:
-    break;
+  uint32_t currentTime = millis();
+
+  if (currentTime - lastInputTime > INPUT_DELAY) {
+    bool moved = false;
+
+    switch (dir) {
+    case Joystick::Direction::UP:
+      currentLineIndex =
+          (currentLineIndex + MENU_STRINGS_COUNT - 1) % MENU_STRINGS_COUNT;
+      moved = true;
+      break;
+    case Joystick::Direction::DOWN:
+      currentLineIndex = (currentLineIndex + 1) % MENU_STRINGS_COUNT;
+      moved = true;
+      break;
+    default:
+      break;
+    }
+
+    if (moved) {
+      isDirty = true;
+      lastInputTime = currentTime;
+    }
   }
 }
 
 void LevelSelector::render(uint32_t deltaTime, Arduino_GFX &gfx) {
-  if (!isDirty)
-  {
+  if (!isDirty) {
     return;
   }
   isDirty = false;

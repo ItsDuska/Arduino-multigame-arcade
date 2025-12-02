@@ -19,4 +19,8 @@ private:
   uint8_t currentLineIndex = 0;
   GameManager *gameManager;
   PlayerStatManager *playerStatManager;
+
+  bool isDirty = true;
+  uint32_t lastInputTime = 0;
+  const uint32_t INPUT_DELAY = 200;
 };
