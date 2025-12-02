@@ -126,9 +126,6 @@ int main(int argc, char *argv[]) {
         if (mappedKey != 0) {
           MockInputState::lastKeyPressed = mappedKey;
           MockInputState::newKeyAvailable = true;
-
-          // Debuggaus: Näet konsolissa mitä painettiin
-          printf("PC Key: %d -> Mapped to: %c\n", e.key.keysym.sym, mappedKey);
         }
       }
     }
