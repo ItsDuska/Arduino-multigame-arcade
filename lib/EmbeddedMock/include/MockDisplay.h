@@ -47,6 +47,12 @@ public:
   void println(const char *text);
   void println(int n);
   void println(double n);
+  void print(long n);
+  void print(unsigned long n);
+  void println(long n);
+  void println(unsigned long n);
+  void print(unsigned int n);
+  void println(unsigned int n);
 
   // --- MUUT ---
   void setRotation(uint8_t r) {

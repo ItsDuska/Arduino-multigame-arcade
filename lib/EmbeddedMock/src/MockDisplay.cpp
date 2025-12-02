@@ -234,3 +234,13 @@ void Arduino_GFX::print(int n) { print(std::to_string(n).c_str()); }
 void Arduino_GFX::print(double n) { print(std::to_string(n).c_str()); }
 void Arduino_GFX::println(int n) { println(std::to_string(n).c_str()); }
 void Arduino_GFX::println(double n) { println(std::to_string(n).c_str()); }
+void Arduino_GFX::print(long n) { print(std::to_string(n).c_str()); }
+void Arduino_GFX::print(unsigned long n) { print(std::to_string(n).c_str()); }
+void Arduino_GFX::println(long n) { println(std::to_string(n).c_str()); }
+void Arduino_GFX::println(unsigned long n) {
+  println(std::to_string(n).c_str());
+}
+void Arduino_GFX::print(unsigned int n) { print(std::to_string(n).c_str()); }
+void Arduino_GFX::println(unsigned int n) {
+  println(std::to_string(n).c_str());
+}
