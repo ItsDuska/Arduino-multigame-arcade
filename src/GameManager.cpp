@@ -198,7 +198,7 @@ void GameManager::processActiveGameFrame(uint32_t deltaTime) {
   if (activeGame->isComplete()) {
     if (overrideState != GameState::STATE_NULL) {
       currentState = overrideState;
-      overrideState = GameState::STATE_NULL; // <- nollaus tärkeä!
+      overrideState = GameState::STATE_NULL;
     } else {
       currentState = GameState::STATE_GAME_OVER;
     }

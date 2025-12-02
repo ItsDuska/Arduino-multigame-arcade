@@ -23,5 +23,4 @@ private:
   uint32_t reactionTime;
   uint32_t testCount;
   bool speedDisplayed;
-  bool gameComplete;
 };

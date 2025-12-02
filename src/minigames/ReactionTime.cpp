@@ -9,8 +9,7 @@ static bool isTimerRunning = false;
 void reactionTimerISR() { timerFired = true; }
 
 ReactionTimeGame::ReactionTimeGame()
-    : phase(START), phaseStartTime(0), reactionTime(0), speedDisplayed(false),
-      gameComplete(false) {}
+    : phase(START), phaseStartTime(0), reactionTime(0), speedDisplayed(false) {}
 
 void ReactionTimeGame::init(Arduino_GFX &gfx) {
   gfx.fillScreen(RGB565_BLACK);
@@ -28,6 +27,10 @@ void ReactionTimeGame::init(Arduino_GFX &gfx) {
 
 void ReactionTimeGame::update(uint32_t deltaTime, Keyboard &keyboard,
                               Joystick &joystick) {
+  if (gameComplete)
+  {
+    return;
+  }
   switch (phase) {
   case START:
     if (!isTimerRunning) {
@@ -104,10 +107,6 @@ void ReactionTimeGame::update(uint32_t deltaTime, Keyboard &keyboard,
 
   default:
     break;
-  }
-
-  if (gameComplete) {
-    return;
   }
 }
 
