@@ -44,7 +44,7 @@ private:
   uint8_t currentGameIndex;
   uint8_t totalGames;
   bool _overrideGameIndex = false;
-  GameState overrideState;
+  GameState overrideState = GameState::STATE_NULL;
 
   uint16_t currentScore = 0;
   uint8_t lostGameCount = 1;

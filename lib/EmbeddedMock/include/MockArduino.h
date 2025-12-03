@@ -114,3 +114,7 @@ inline void randomSeed(unsigned long seed) { srand(seed); }
 inline long map(long x, long in_min, long in_max, long out_min, long out_max) {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
+
+template <typename T> inline T min(T a, T b) { return (a < b) ? a : b; }
+
+template <typename T> inline T max(T a, T b) { return (a > b) ? a : b; }

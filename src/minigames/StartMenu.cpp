@@ -30,9 +30,6 @@ void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
       if (ev.key == '*') {
         int index = currentLineIndex;
         switch (index) {
-        case 0:
-          gameManager->overrideGameIndex(index, false);
-          break;
         case 1:
           gameManager->overrideGameIndex(index, true);
           break;
@@ -43,6 +40,9 @@ void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
           // automaattisesti siihen oikeeseen paikkaan lol.
           break;
         case 3:
+          // Heitetään tahalleen error. Tämä vie meidän
+          // automaattisesti siihen score menuun ja sitten takaisn main menuun.
+          gameManager->overrideGameIndex(255, false);
           playerStatManager->resetScores();
           gameManager->setScore(0);
           Serial.println("Scores reset");

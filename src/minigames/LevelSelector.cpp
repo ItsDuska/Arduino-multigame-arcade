@@ -5,7 +5,7 @@ constexpr char gameName[] = "LEVEL SELECTOR";
 constexpr uint8_t MENU_NAME_LEN = sizeof(gameName) - 1;
 
 constexpr const char *gameStrings[] = {
-    "Falling Blocks", "Reaction Game", "Button Smash", "Maze Game",
+    "Falling Blocks", "Reaction Game", "Maze Game", "Button Smash",
     "Kalastus", // Stardew valley fishig minigame
     "Muisti Peli",    "Dino Peli"};
 
@@ -84,7 +84,7 @@ void LevelSelector::render(uint32_t deltaTime, Arduino_GFX &gfx) {
 
   const int titleWidth = MENU_NAME_LEN * charWidth;
   const int titleX = (screenWidth - titleWidth) / 2;
-  const int titleY = 20;
+  const int titleY = 40;
 
   gfx.setTextColor(RGB565_WHITE, RGB565_WHITE);
   gfx.setCursor(titleX, titleY);

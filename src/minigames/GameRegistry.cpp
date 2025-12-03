@@ -2,7 +2,7 @@
 
 // #include "minigames/ButtonMash.h"
 #include "minigames/FallingBlocks.h"
-// #include "minigames/Maze.h"
+#include "minigames/MazeGame.h"
 #include "minigames/ReactionTime.h"
 // #include "minigames/SpinJoyStickGame.h"
 
@@ -14,6 +14,8 @@ Game *createGame(uint8_t gameIndex) {
     return new FallingBlocks();
   case 1:
     return new ReactionTimeGame();
+  case 2:
+    return new MazeGame();
     //  case 2: return new JoystickSpinGame();
     //  case 3: return new FallingBlocks();
 

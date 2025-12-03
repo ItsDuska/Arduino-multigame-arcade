@@ -133,6 +133,7 @@ void GameManager::initNextGame(uint8_t gameIndex) {
 
   if (_overrideGameIndex) {
     gameIndex = currentGameIndex;
+    _overrideGameIndex = false; // Reset after using it
   } else if (gameIndex == RANDOM_GAME_FLAG) {
     gameIndex = random(0, totalGames);
   }

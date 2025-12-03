@@ -13,9 +13,9 @@ constexpr uint32_t MAX_SPAWN_INTERVAL = 500;
 constexpr uint32_t MIN_OBSTACLE_SPEED = 100;
 constexpr uint32_t MAX_OBSTACLE_SPEED = 300;
 
-#ifdef TARGET_PC
-float min(float a, float b) { return (a < b) ? a : b; }
-#endif
+// #ifdef TARGET_PC
+// float min(float a, float b) { return (a < b) ? a : b; }
+// #endif
 FallingBlocks::FallingBlocks()
     : playerX(COLS / 2), lastSpawnTime(0), lastMoveTime(0), score(0) {}
 
@@ -54,11 +54,12 @@ void FallingBlocks::render(uint32_t deltaTime, Arduino_GFX &gfx) {
   int cellWidth = gfx.width() / COLS;
   int cellHeight = gfx.height() / ROWS;
 
-  // poistetaan ensin vain vanhat piirrokset.
-  // Poistetaan vain vanhat
+  // gfx.drawRect(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color)
+  //  poistetaan ensin vain vanhat piirrokset.
+  //  Poistetaan vain vanhat
   for (int i = 0; i < MAX_OBSTACLES; i++) {
     if (obstaclesLastPos[i].active) {
-      gfx.fillRect(obstaclesLastPos[i].x * cellWidth,
+      gfx.drawRect(obstaclesLastPos[i].x * cellWidth,
                    obstaclesLastPos[i].y * cellHeight, cellWidth, cellHeight,
                    COLOR_BG);
     }
@@ -67,21 +68,21 @@ void FallingBlocks::render(uint32_t deltaTime, Arduino_GFX &gfx) {
   // Sitten piirretään uudet
   for (int i = 0; i < MAX_OBSTACLES; i++) {
     if (obstacles[i].active) {
-      gfx.fillRect(obstacles[i].x * cellWidth, obstacles[i].y * cellHeight,
+      gfx.drawRect(obstacles[i].x * cellWidth, obstacles[i].y * cellHeight,
                    cellWidth, cellHeight, COLOR_OBSTACLE);
     }
   }
 
   // siivotaan vanha pelaaja.
-  gfx.fillRect(lastPlayerX * cellWidth, (ROWS - 1) * cellHeight, cellWidth,
+  gfx.drawRect(lastPlayerX * cellWidth, (ROWS - 1) * cellHeight, cellWidth,
                cellHeight, COLOR_BG);
 
   // Piirretään pelaaja.
-  gfx.fillRect(playerX * cellWidth, (ROWS - 1) * cellHeight, cellWidth,
+  gfx.drawRect(playerX * cellWidth, (ROWS - 1) * cellHeight, cellWidth,
                cellHeight, COLOR_PLAYER);
 
   // siivotaan teksti.
-  gfx.fillRect(0, 0, 50, 20, COLOR_BG);
+  gfx.drawRect(0, 0, 50, 20, COLOR_BG);
 
   // TODO: PIIRRÄ MUSTA RUUTU SCOREN PÄÄLLE KOSKA EMME ENÄÄ CLEARAA RUUTUA.
   gfx.setCursor(0, 0);
