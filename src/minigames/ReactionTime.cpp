@@ -1,11 +1,8 @@
 #include <minigames/ReactionTime.h>
 
-// Global variables for TimerOne handling
 static volatile bool timerFired = false;
 static int countdownCounter = 3;
-static bool isTimerRunning = false;
 
-// Interrupt Service Routine
 void reactionTimerISR() { timerFired = true; }
 
 ReactionTimeGame::ReactionTimeGame()
@@ -16,67 +13,61 @@ void ReactionTimeGame::init(Arduino_GFX &gfx) {
   gfx.setTextColor(RGB565_WHITE);
   gfx.setTextSize(2);
 
-  // Nollataan staattiset muuttujat
   timerFired = false;
-  isTimerRunning = false;
   countdownCounter = 3;
   testCount = 0;
+  gameComplete = false;
+  phase = START;
 
-  gameComplete = false; // Varmistetaan että peli ei ole "valmis" heti alussa
+  // Käynnistetään ajastin: 1 sekunti (1 000 000 mikrosekuntia)
+  Timer1.initialize(1000000);
+  Timer1.attachInterrupt(reactionTimerISR);
 };
 
 void ReactionTimeGame::update(uint32_t deltaTime, Keyboard &keyboard,
                               Joystick &joystick) {
   if (gameComplete)
-  {
     return;
-  }
+
   switch (phase) {
   case START:
-    if (!isTimerRunning) {
-      Timer1.initialize(1000000); // 1 second
-      Timer1.attachInterrupt(reactionTimerISR);
-      isTimerRunning = true;
-      timerFired = false;
-    }
-
+    // Odotetaan että TimerOne laukaisee keskeytyksen
     if (timerFired) {
       timerFired = false;
       countdownCounter--;
 
       if (countdownCounter <= 0) {
-        Timer1.detachInterrupt();
-        isTimerRunning = false;
         phase = WAITING;
+        Timer1.stop();
+
+        // Arvotaan satunnainen viive (2-5 sekuntia) ja käynnistetään ajastin
+        // uudelleen
+        uint32_t randomDelay = random(2000, 5000) * 1000;
+        Timer1.setPeriod(randomDelay);
+        Timer1.restart();
       }
     }
     break;
 
   case WAITING:
-    if (!isTimerRunning) {
-      uint32_t randomDelay =
-          random(2000, 5000) * 1000; // Convert ms to microseconds
-      Timer1.initialize(randomDelay);
-      Timer1.attachInterrupt(reactionTimerISR);
-      isTimerRunning = true;
-      timerFired = false;
-    }
-
+    // Odotetaan satunnaisen ajan kulumista
     if (timerFired) {
-      Timer1.detachInterrupt();
-      isTimerRunning = false;
+      timerFired = false;
+      Timer1.stop(); // Pysäytetään TimerOne, mittaus alkaa nyt
+
       phaseStartTime = millis();
       phase = REACTSCREEN;
     }
     break;
 
   case REACTSCREEN:
+    // Odotetaan pelaajan syötettä
     while (keyboard.hasEvent()) {
       Keyboard::KeyEvent ev = keyboard.nextEvent();
       if (ev.type == Keyboard::KeyEvent::Type::PRESS) {
         reactionTime = millis() - phaseStartTime;
-        Serial.println(phaseStartTime);
         phase = SPEED_DISPLAY;
+        speedDisplayed = false;
         break;
       }
     }
@@ -87,11 +78,15 @@ void ReactionTimeGame::update(uint32_t deltaTime, Keyboard &keyboard,
       Keyboard::KeyEvent ev = keyboard.nextEvent();
       if (ev.type == Keyboard::KeyEvent::Type::PRESS) {
         testCount++;
-        speedDisplayed = false; // Nollataan lippu seuraavaa kertaa varten
 
         if (testCount < TEST_ROUNDS) {
+          // Uusi kierros
           phase = WAITING;
-          isTimerRunning = false;
+          timerFired = false;
+
+          uint32_t randomDelay = random(2000, 5000) * 1000;
+          Timer1.setPeriod(randomDelay);
+          Timer1.restart();
         } else {
           phase = COMPLETE;
         }
@@ -101,7 +96,6 @@ void ReactionTimeGame::update(uint32_t deltaTime, Keyboard &keyboard,
     break;
 
   case COMPLETE:
-    Serial.print("Lopetus!");
     gameComplete = true;
     break;
 
@@ -114,27 +108,18 @@ void ReactionTimeGame::render(uint32_t deltaTime, Arduino_GFX &gfx) {
   const int screenWidth = gfx.width();
   const int titleX = 50;
   const int titleY = 40;
-  const int lineHeight = 30;
-  const int countdownNumY = (titleY * 2 + lineHeight) + lineHeight;
-  const int countdownNumX = screenWidth / 2;
 
   switch (phase) {
   case START:
     gfx.fillScreen(RGB565_BLACK);
     gfx.setCursor(titleX, titleY);
-    gfx.print("Paina nappia kun");
-    gfx.setCursor(titleX, titleY + 30);
-    gfx.print("ruutu vaihtuu!");
+    gfx.print("Valmistaudu...");
 
-    for (int i = 3; i > 0; i--) {
-      // Pyyhitään edellinen numero
-      gfx.fillRect(countdownNumX, countdownNumY, 40, 30, RGB565_BLACK);
-      gfx.setCursor(countdownNumX, countdownNumY);
-      gfx.print(i);
-      delay(1000);
-    }
-
-    phase = WAITING;
+    // Piirretään laskuri
+    gfx.setTextSize(4);
+    gfx.setCursor(screenWidth / 2 - 10, titleY * 2 + 40);
+    gfx.print(countdownCounter);
+    gfx.setTextSize(2);
     break;
 
   case WAITING:
@@ -142,26 +127,32 @@ void ReactionTimeGame::render(uint32_t deltaTime, Arduino_GFX &gfx) {
     break;
 
   case REACTSCREEN:
-    gfx.fillRect(150, 100, 10, 10, RGB565_CYAN);
+    gfx.drawCircle(160, 120, 50, RGB565_CYAN);
     break;
 
   case SPEED_DISPLAY:
-    if (speedDisplayed)
-      break;
-
-    gfx.fillScreen(RGB565_BLACK);
-    gfx.setCursor(titleX, titleY + 50);
-    gfx.print("Reaktioaika: ");
-    gfx.print(reactionTime);
-    gfx.print(" ms");
-    speedDisplayed = true;
+    if (!speedDisplayed) {
+      gfx.fillScreen(RGB565_BLACK);
+      gfx.setTextColor(RGB565_WHITE);
+      gfx.setCursor(titleX, titleY + 50);
+      gfx.print("Reaktioaika: ");
+      gfx.print(reactionTime);
+      gfx.print(" ms");
+      speedDisplayed = true;
+    }
     break;
 
   case COMPLETE:
+    gfx.fillScreen(RGB565_BLACK);
+    gfx.setCursor(titleX, titleY);
+    gfx.print("Peli ohi!");
     break;
   }
 }
 
-void ReactionTimeGame::cleanup() { Timer1.detachInterrupt(); }
+void ReactionTimeGame::cleanup() {
+  Timer1.detachInterrupt();
+  Timer1.stop();
+}
 
 const char *ReactionTimeGame::getName() { return "Reaction Time"; }

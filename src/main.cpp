@@ -1,15 +1,5 @@
 #include "GameManager.h"
-
-// --- PC SIMULAATION VAATIMAT OSAT ---
-#ifdef TARGET_PC
-#include "MockDisplay.h"
-#include "MockInputState.h"
-#include <SDL2/SDL.h>
-
-// Globaali viittaus näyttöön, jotta main-loop voi päivittää ikkunan
-extern SDL_Window *sdlWindow;
-extern SDL_Renderer *sdlRenderer;
-#endif
+#include "HardwareWrapper.h"
 
 GameManager gameManager;
 
@@ -20,8 +10,11 @@ void setup() {
 
 void loop() { gameManager.update(); }
 
-// --- TÄMÄ OSA KÄÄNNETÄÄN VAIN PC:LLÄ ---
+// --- TÄMÄ OSA SIMULOI OIKEITA INPUTTEJA SIMULAATIOSSA ---
 #ifdef TARGET_PC
+
+extern SDL_Window *sdlWindow;
+extern SDL_Renderer *sdlRenderer;
 
 // Alustetaan staattiset muuttujat
 int MockInputState::joyX = 512;
@@ -142,6 +135,9 @@ int main(int argc, char *argv[]) {
     if (kbState[SDL_SCANCODE_RIGHT])
       MockInputState::joyX = 1023;
     MockInputState::joyBtn = kbState[SDL_SCANCODE_RETURN]; // Enter = nappi
+
+    // Simuloidaan ajan kuluminen
+    Timer1.tick();
 
     // --- ARDUINO LOOP ---
     loop();

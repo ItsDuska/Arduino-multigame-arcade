@@ -6,6 +6,7 @@
 #include <MockDisplay.h>        // Korvaa Arduino_GFX
 #include <MockDisplayDrivers.h> // Korvaa Arduino_DataBus ja Arduino_R61529
 #include <MockEEPROM.h>         // Korvaa EEPROM
+#include <MockInputState.h>     // Simuloi joystickin ja näppäimistön tilaa
 #include <MockKeypad.h>         // Korvaa Adafruit_Keypad
 #include <MockTimerOne.h>       // Korvaa TimerOne
 #include <SDL2/SDL.h>
