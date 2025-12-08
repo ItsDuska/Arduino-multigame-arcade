@@ -1,4 +1,5 @@
 #include "GameManager.h"
+#include "MockArduino.h"
 #include "minigames/EndScreen.h"
 #include "minigames/LevelSelector.h"
 #include "minigames/StartMenu.h"
@@ -135,6 +136,7 @@ void GameManager::initNextGame(uint8_t gameIndex) {
     gameIndex = currentGameIndex;
     _overrideGameIndex = false; // Reset after using it
   } else if (gameIndex == RANDOM_GAME_FLAG) {
+      Serial.println("Picking random game");
     gameIndex = random(0, totalGames);
   }
   activeGame = createGame(gameIndex);

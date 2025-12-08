@@ -100,9 +100,23 @@ inline int analogRead(uint8_t pin) {
   return 512;
 }
 
-inline long random(long min, long max) { return min + (rand() % (max - min)); }
+inline void _autoInitRandom() {
+  static bool initialized = false;
+  if (!initialized) {
+    initialized = true;
+    srand(time(NULL));
+  }
+}
+
+inline long random(long min, long max) {
+  _autoInitRandom();
+  if (max <= min)
+    return min; // Estä nollalla jako
+  return min + (rand() % (max - min));
+}
 
 inline long random(long max) {
+  _autoInitRandom();
   if (max == 0)
     return 0;
   return rand() % max;
