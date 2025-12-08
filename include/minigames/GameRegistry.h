@@ -5,6 +5,6 @@
 
 Game *createGame(uint8_t gameIndex);
 
-constexpr uint8_t GAME_COUNT = 3;
+constexpr uint8_t GAME_COUNT = 4;
 
 #endif

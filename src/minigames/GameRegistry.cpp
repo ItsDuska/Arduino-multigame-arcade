@@ -1,6 +1,6 @@
 #include <minigames/GameRegistry.h>
 
-// #include "minigames/ButtonMash.h"
+#include "minigames/ButtonMash.h"
 #include "minigames/FallingBlocks.h"
 #include "minigames/MazeGame.h"
 #include "minigames/ReactionTime.h"
@@ -16,6 +16,8 @@ Game *createGame(uint8_t gameIndex) {
     return new ReactionTimeGame();
   case 2:
     return new MazeGame();
+  case 3:
+    return new ButtonMashGame();
     //  case 2: return new JoystickSpinGame();
     //  case 3: return new FallingBlocks();
 
