@@ -14,7 +14,7 @@ public:
 
 private:
   const uint16_t MAX_REACT_TIME = 50000;
-  const uint8_t TEST_ROUNDS = 5;
+  const uint8_t TEST_ROUNDS = 3;
 
   enum GamePhase { START, WAITING, REACTSCREEN, SPEED_DISPLAY, COMPLETE };
 
