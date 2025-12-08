@@ -6,6 +6,8 @@
 #include <iostream>
 #include <thread>
 
+#include "MockRegisters.h"
+
 // --- VAKIOT ---
 #define INPUT 0
 #define OUTPUT 1

@@ -1,4 +1,3 @@
-#include "MockDisplay.h"
 #include <minigames/FallingBlocks.h>
 
 constexpr uint16_t COLOR_BG = RGB565_BLACK;

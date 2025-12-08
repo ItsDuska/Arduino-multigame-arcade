@@ -16,10 +16,15 @@ Joystick::Joystick(uint8_t pinA, uint8_t pinB, uint8_t pinC) {
   this->pinB = pinB;
   this->pinC = pinC;
 
-  pinMode(pinA, INPUT);
-  pinMode(pinB, INPUT);
+  DDRF = 0b11111000;  // A0-A2 on x,y ja button inputit. Loput näytölle.
+  DIDR0 = 0b00000011; // A0 ja A1 digital input pois päältä. Parantaa lukemisen
+  // tarkkuutta.
 
-  pinMode(pinC, INPUT_PULLUP);
+  DDRF &= ~0b00000100; // Input
+  PORTF = 0b00000100;  // pullup A2 napille
+
+  // Alustetaan ADC
+  ADCSRA = (1 << ADEN) | (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
 }
 
 void Joystick::update() {
@@ -29,8 +34,19 @@ void Joystick::update() {
   rawX = MockInputState::joyX;
   rawY = MockInputState::joyY;
 #else
-  rawX = analogRead(pinA);
-  rawY = analogRead(pinB);
+  ADMUX = 0b01000000;    // A0 pinni, Vcc ref
+  ADCSRA |= (1 << ADSC); // Aloita muunnos
+  while (ADCSRA & (1 << ADSC))
+    ;
+
+  rawX = ADC; // Lue arvo
+
+  ADMUX = 0b01000001;    // A1 pinni, Vcc ref
+  ADCSRA |= (1 << ADSC); // Aloita muunnos
+  while (ADCSRA & (1 << ADSC))
+    ;
+
+  rawY = ADC; // Lue arvo
 #endif
 
   position.x = map(rawX, 0, 1023, JOYSTICK_BEGIN_VAL, JOYSTICK_END_VAL);
