@@ -34,7 +34,7 @@ void LevelSelector::update(uint32_t deltaTime, Keyboard &keyboard,
             currentLineIndex); // mahdollinen offset tähän jos tarvii.
         gameComplete = true;
       } else if (ev.key == '0') {
-        gameManager->overrideGameIndex(0, true);
+        gameManager->overrideGameIndex(99, true);
       }
     }
   }

@@ -33,13 +33,12 @@ void GameManager::init() {
 
   playerStatManager.read();
   gfx->begin();
-  gfx->setRotation(1);
   gfx->fillScreen(RGB565_BLACK);
   gfx->setRotation(3);
 
   Serial.println("=== Multi-Game Arcade ===");
   Serial.print("Total games: ");
-  Serial.println(totalGames);
+  Serial.println((int)totalGames);
 
   currentState = GameState::STATE_MENU;
 }
@@ -127,18 +126,20 @@ void GameManager::update() {
 }
 
 void GameManager::initNextGame(uint8_t gameIndex) {
-  Serial.print("Loading game ");
-  Serial.print(currentGameIndex + 1);
-  Serial.print("/");
-  Serial.println(totalGames);
-
   if (_overrideGameIndex) {
     gameIndex = currentGameIndex;
     _overrideGameIndex = false; // Reset after using it
   } else if (gameIndex == RANDOM_GAME_FLAG) {
-      Serial.println("Picking random game");
     gameIndex = random(0, totalGames);
   }
+
+  currentGameIndex = gameIndex;
+
+  Serial.print("Loading game ");
+  Serial.print((int)currentGameIndex + 1);
+  Serial.print("/");
+  Serial.println((int)totalGames);
+
   activeGame = createGame(gameIndex);
 
   if (activeGame) {
@@ -181,13 +182,16 @@ void GameManager::updateScore() {
 
 void GameManager::overrideGameIndex(uint8_t gameIndex, bool isMenu) {
   if (isMenu) {
-    Serial.println(gameIndex);
     switch (gameIndex) {
-    case 0:
-      overrideState = GameState::STATE_MENU;
-    case 1:
+    case 0: // Play
+      overrideState = GameState::STATE_GAME_INIT;
+      return;
+    case 1: // Level Select
       overrideState = GameState::STATE_LEVEL_SELECT;
-      break;
+      return;
+    case 99: // Main Menu
+      overrideState = GameState::STATE_MENU;
+      return;
     default:
       break;
     } // tähän voi lisää muita menuja jos niitä tulee.

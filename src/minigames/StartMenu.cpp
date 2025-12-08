@@ -30,8 +30,11 @@ void StartMenu::update(uint32_t deltaTime, Keyboard &keyboard,
       if (ev.key == '*') {
         int index = currentLineIndex;
         switch (index) {
-        case 1:
-          gameManager->overrideGameIndex(index, true);
+        case 0: // "Play" valittu
+          gameManager->overrideGameIndex(0, true);
+          break;
+        case 1: // "Level Select" valittu
+          gameManager->overrideGameIndex(1, true);
           break;
         case 2:
           index = 500;
