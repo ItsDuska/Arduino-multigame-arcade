@@ -13,15 +13,20 @@ void ReactionTimeGame::init(Arduino_GFX &gfx) {
   gfx.setTextColor(RGB565_WHITE);
   gfx.setTextSize(2);
 
-  timerFired = false;
-  countdownCounter = 3;
+  // Häkki jotta nummerolaskuri alkaa kolmosesta koska en jaksa varmistaa
+  // renderöinnin toimivuutta
+  countdownCounter = 4;
   testCount = 0;
   gameComplete = false;
   phase = START;
+  initialRender = false;
+  isDirty = true;
 
   // Käynnistetään ajastin: 1 sekunti (1 000 000 mikrosekuntia)
   Timer1.initialize(1000000);
   Timer1.attachInterrupt(reactionTimerISR);
+  timerFired = false;
+  Timer1.restart();
 };
 
 void ReactionTimeGame::update(Keyboard &keyboard, Joystick &joystick) {
@@ -34,9 +39,12 @@ void ReactionTimeGame::update(Keyboard &keyboard, Joystick &joystick) {
     if (timerFired) {
       timerFired = false;
       countdownCounter--;
+      isDirty = true;
 
       if (countdownCounter <= 0) {
         phase = WAITING;
+        initialRender = false;
+        isDirty = true;
         Timer1.stop();
 
         // Arvotaan satunnainen viive (2-5 sekuntia) ja käynnistetään ajastin
@@ -56,6 +64,8 @@ void ReactionTimeGame::update(Keyboard &keyboard, Joystick &joystick) {
 
       phaseStartTime = millis();
       phase = REACTSCREEN;
+      initialRender = false;
+      isDirty = true;
     }
     break;
 
@@ -67,6 +77,8 @@ void ReactionTimeGame::update(Keyboard &keyboard, Joystick &joystick) {
         reactionTime = millis() - phaseStartTime;
         phase = SPEED_DISPLAY;
         speedDisplayed = false;
+        initialRender = false;
+        isDirty = true;
         break;
       }
     }
@@ -81,7 +93,9 @@ void ReactionTimeGame::update(Keyboard &keyboard, Joystick &joystick) {
         if (testCount < TEST_ROUNDS) {
           // Uusi kierros
           phase = WAITING;
+          initialRender = false;
           timerFired = false;
+          isDirty = true;
 
           uint32_t randomDelay = random(2000, 5000) * 1000;
           Timer1.setPeriod(randomDelay);
@@ -104,35 +118,63 @@ void ReactionTimeGame::update(Keyboard &keyboard, Joystick &joystick) {
 }
 
 void ReactionTimeGame::render(Arduino_GFX &gfx) {
+  if (!isDirty && !initialRender) {
+    return;
+  }
+
   const int screenWidth = gfx.width();
   const int titleX = 50;
   const int titleY = 40;
 
   switch (phase) {
   case START:
-    gfx.fillScreen(RGB565_BLACK);
-    gfx.setCursor(titleX + 20, titleY);
-    gfx.print("Valmistaudu...");
-    gfx.setCursor(titleX - 20, titleY + 30);
-    gfx.print("Painettava nappi on *");
+    // Piirrä staattiset tekstit vain kerran
+    if (!initialRender) {
+      gfx.fillScreen(RGB565_BLACK);
+      gfx.setTextColor(RGB565_WHITE);
+      gfx.setCursor(titleX + 20, titleY);
+      gfx.print("Valmistaudu...");
+      gfx.setCursor(titleX - 20, titleY + 30);
+      gfx.print("Painettava nappi on *");
+      initialRender = true;
+    }
 
-    // Piirretään laskuri
-    gfx.setTextSize(4);
-    gfx.setCursor(screenWidth / 2 - 10, titleY * 2 + 40);
-    gfx.print(countdownCounter);
-    gfx.setTextSize(2);
+    if (isDirty) {
+      isDirty = false;
+      // Määrittele alue numerolle
+      int numX = screenWidth / 2 - 10;
+      int numY = titleY * 2 + 40;
+
+      // Pyyhi vanha numero mustalla laatikolla (koko esim 40x40)
+      gfx.fillRect(numX - 5, numY - 5, 40, 40, RGB565_BLACK);
+
+      // Piirrä uusi numero
+      gfx.setTextSize(4);
+      gfx.setCursor(numX, numY);
+      gfx.print(countdownCounter);
+      gfx.setTextSize(2); // Palauta koko
+    }
     break;
 
   case WAITING:
-    gfx.fillScreen(RGB565_BLACK);
+    if (!initialRender) {
+      gfx.fillScreen(RGB565_BLACK); // Tyhjä ruutu odotuksessa
+      initialRender = true;
+    }
     break;
 
   case REACTSCREEN:
-    gfx.drawCircle(160, 120, 50, RGB565_CYAN);
+    if (!initialRender) {
+      // Piirretään pallo vain kerran, ei joka frame
+      // (paitsi jos haluat sen liikkuvan/vilkkuvan)
+      gfx.fillScreen(RGB565_BLACK);
+      gfx.drawCircle(160, 120, 50, RGB565_CYAN);
+      initialRender = true;
+    }
     break;
 
   case SPEED_DISPLAY:
-    if (!speedDisplayed) {
+    if (!initialRender) {
       gfx.fillScreen(RGB565_BLACK);
       gfx.setTextColor(RGB565_WHITE);
       gfx.setCursor(titleX, titleY + 50);
@@ -141,14 +183,8 @@ void ReactionTimeGame::render(Arduino_GFX &gfx) {
       gfx.print(" ms");
       gfx.setCursor(titleX, titleY + 100);
       gfx.print("Paina * jatkaaksesi");
-      speedDisplayed = true;
+      initialRender = true;
     }
-    break;
-
-  case COMPLETE:
-    gfx.fillScreen(RGB565_BLACK);
-    gfx.setCursor(titleX, titleY);
-    gfx.print("Peli ohi!");
     break;
   }
 }
