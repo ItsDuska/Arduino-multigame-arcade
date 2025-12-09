@@ -2,12 +2,15 @@
 #define GAME1_BUTTON_MASH_H
 
 #include "GameInterface.h"
+#include <initializer_list>
 
 class ButtonMashGame : public Game {
 private:
   enum GameState { COUNTDOWN, PLAYING, GAMEOVER };
   GameState state;
   uint8_t keyPresses;
+  bool isDirty = true;
+  bool initialRender;
 
   const uint16_t GAME_DURATION = 10000; // 10 seconds
   const uint8_t TEXT_SIZE = 4;
