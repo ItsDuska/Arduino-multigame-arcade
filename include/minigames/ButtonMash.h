@@ -2,7 +2,6 @@
 #define GAME1_BUTTON_MASH_H
 
 #include "GameInterface.h"
-#include <initializer_list>
 
 class ButtonMashGame : public Game {
 private:
@@ -19,6 +18,8 @@ private:
   uint8_t countdown = 3;
   uint32_t currentMillis;
   uint32_t previousMillis;
+  uint8_t currentCount;
+
 public:
   ButtonMashGame();
   void init(Arduino_GFX &gfx) override;

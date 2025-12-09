@@ -1,6 +1,8 @@
 #pragma once
 
 #include "MockRegisters.h"
+#include "WString.h"
+
 #include <chrono>
 #include <cstdint>
 #include <cstdlib>
